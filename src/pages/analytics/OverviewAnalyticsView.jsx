@@ -34,6 +34,7 @@ export default function OverviewAnalyticsView() {
   return (
     <Container maxWidth={settings.themeStretch ? false : "xl"}>
       <Typography
+      className="title"
         variant="h4"
         sx={{
           mb: { xs: 3, md: 5 },
