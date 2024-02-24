@@ -1,6 +1,5 @@
 import { useState, useCallback } from 'react';
 
-// ----------------------------------------------------------------------
 
 export default function usePopover() {
   const [open, setOpen] = useState(null);

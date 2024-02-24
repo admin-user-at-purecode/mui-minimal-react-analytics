@@ -10,19 +10,16 @@ import InputBase from '@mui/material/InputBase';
 import IconButton from '@mui/material/IconButton';
 import InputAdornment from '@mui/material/InputAdornment';
 import Dialog, { dialogClasses } from '@mui/material/Dialog';
+import { Icon } from '@iconify/react';
 
 
-import { useBoolean } from '../../../components/hooks/use-boolean';
-import { useResponsive } from '../../../components/hooks/use-responsive';
-import { useEventListener } from '../../../components/hooks/use-event-listener';
-
-import Typography from '@mui/material/Typography';
-import Iconify from '../../iconify';
-
-
+import { useBoolean } from '../../hooks/use-boolean';
+import { useResponsive } from '../../hooks/use-responsive';
+import { useEventListener } from '../../hooks/use-event-listener';
 
 import { useNavData } from '../../layout/config-navigation';
 import { applyFilter, groupedData, getAllItems } from './utils';
+import { Typography } from '@mui/material';
 
 // ----------------------------------------------------------------------
 
@@ -52,7 +49,7 @@ function Searchbar() {
 
   useEventListener('keydown', handleKeyDown);
 
-  
+
 
   const handleSearch = useCallback((event) => {
     setSearchQuery(event.target.value);
@@ -66,10 +63,15 @@ function Searchbar() {
   const renderButton = (
     <Stack direction="row" alignItems="center">
       <IconButton onClick={search.onTrue}>
-        <Iconify icon="eva:search-fill" />
+        <Box
+          component={Icon}
+          className="component-iconify"
+          icon={"eva:search-fill"}
+          sx={{ width: 20, height: 20 }}
+        />
       </IconButton>
 
-      {lgUp && <typography sx={{ px: 0.75, fontSize: 12, color: 'text.secondary' }}>⌘K</typography>}
+      {lgUp && <Typography sx={{ px: 0.75, fontSize: 12, color: 'text.secondary' }}>⌘K</Typography>}
     </Stack>
   );
 
@@ -98,7 +100,7 @@ function Searchbar() {
           },
         }}
       >
-        <Box sx={{ p: 3, borderBottom: `solid 1px ${theme.palette.divider}` }}>
+        <Box sx={{ p: 3, borderBottom: `solid 1px ${"rgba(145, 158, 171, 0.2)"}` }}>
           <InputBase
             fullWidth
             autoFocus
@@ -107,10 +109,15 @@ function Searchbar() {
             onChange={handleSearch}
             startAdornment={
               <InputAdornment position="start">
-                <Iconify icon="eva:search-fill" width={24} sx={{ color: 'text.disabled' }} />
+                <Box
+              component={Icon}
+              className="component-iconify"
+              icon={"eva:search-fill"}
+              sx={{ width:24, height: 24 }}
+            />
               </InputAdornment>
             }
-            endAdornment={<typography sx={{ letterSpacing: 1, color: 'text.secondary' }}>esc</typography>}
+            endAdornment={<Typography sx={{ letterSpacing: 1, color: 'text.secondary' }}>esc</Typography>}
             inputProps={{
               sx: { typography: 'h6' },
             }}
@@ -118,8 +125,8 @@ function Searchbar() {
         </Box>
 
         <Box sx={{ p: 3, pt: 2, height: 400 }}>
-          <Text>No Data Found
-            </Text>
+          <Typography>No Data Found
+          </Typography>
         </Box>
       </Dialog>
     </>

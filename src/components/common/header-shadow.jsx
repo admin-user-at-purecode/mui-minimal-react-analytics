@@ -1,5 +1,4 @@
 
-
 import Box from '@mui/material/Box';
 
 // ----------------------------------------------------------------------
@@ -18,12 +17,11 @@ export default function HeaderShadow({ sx, ...other }) {
         borderRadius: '50%',
         position: 'absolute',
         width: `calc(100% - 48px)`,
-        boxShadow: (theme) => theme.customShadows.z8,
+        boxShadow: (theme) => "0 8px 16px 0 rgba(145, 158, 171, 0.16)",
         ...sx,
       }}
       {...other}
     />
   );
 }
-
 

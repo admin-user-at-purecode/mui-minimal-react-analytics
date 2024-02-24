@@ -11,7 +11,7 @@ import IconButton from '@mui/material/IconButton';
 import CardHeader from '@mui/material/CardHeader';
 import FormControlLabel from '@mui/material/FormControlLabel';
 
-import Iconify from '../../components/iconify';
+
 import CustomPopover, { usePopover } from '../../components/custom-popover';
 
 // ----------------------------------------------------------------------
@@ -78,7 +78,7 @@ function TaskItem({ task, checked, onChange }) {
           pr: 1,
           py: 1,
           '&:not(:last-of-type)': {
-            borderBottom: (theme) => `dashed 1px ${theme.palette.divider}`,
+            borderBottom: (theme) => `dashed 1px ${"rgba(145, 158, 171, 0.2)"}`,
           },
           ...(checked && {
             color: 'text.disabled',
@@ -93,30 +93,30 @@ function TaskItem({ task, checked, onChange }) {
         />
 
         <IconButton color={popover.open ? 'inherit' : 'default'} onClick={popover.onOpen}>
-          <Iconify icon="eva:more-vertical-fill" />
+        
         </IconButton>
       </Stack>
 
       <CustomPopover open={popover.open} onClose={popover.onClose} arrow="right-top">
         <MenuItem onClick={handleMarkComplete}>
-          <Iconify icon="eva:checkmark-circle-2-fill" />
+        
           Mark Complete
         </MenuItem>
 
         <MenuItem onClick={handleEdit}>
-          <Iconify icon="solar:pen-bold" />
+         
           Edit
         </MenuItem>
 
         <MenuItem onClick={handleShare}>
-          <Iconify icon="solar:share-bold" />
+          
           Share
         </MenuItem>
 
         <Divider sx={{ borderStyle: 'dashed' }} />
 
         <MenuItem onClick={handleDelete} sx={{ color: 'error.main' }}>
-          <Iconify icon="solar:trash-bin-trash-bold" />
+          
           Delete
         </MenuItem>
       </CustomPopover>

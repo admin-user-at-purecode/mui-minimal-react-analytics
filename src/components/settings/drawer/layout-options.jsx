@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 import Box from '@mui/material/Box';
@@ -12,7 +11,7 @@ export default function LayoutOptions({ options, value, onChange }) {
   const theme = useTheme();
 
   const renderNav = (option, selected) => {
-    const background = `linear-gradient(135deg, ${theme.palette.primary.light} 0%, ${theme.palette.primary.main} 100%)`;
+    const background = `linear-gradient(135deg, ${"#5BE49B"} 0%, ${"#00A76F"} 100%)`;
 
     const baseStyles = {
       flexShrink: 0,
@@ -71,7 +70,7 @@ export default function LayoutOptions({ options, value, onChange }) {
           p: 0.5,
           width: 28,
           height: 1,
-          borderRight: `solid 1px ${alpha(theme.palette.grey[500], 0.08)}`,
+          borderRight: `solid 1px "#919EAB"`,
           ...(option === 'mini' && {
             width: 16,
           }),
@@ -80,7 +79,7 @@ export default function LayoutOptions({ options, value, onChange }) {
             height: 16,
             alignItems: 'center',
             borderRight: 'unset',
-            borderBottom: `solid 1px ${alpha(theme.palette.grey[500], 0.08)}`,
+            borderBottom: `solid 1px "#919EAB"`,
           }),
         }}
       >
@@ -102,7 +101,7 @@ export default function LayoutOptions({ options, value, onChange }) {
           bgcolor: 'grey.500',
           ...(selected && {
             opacity: 0.24,
-            background: `linear-gradient(135deg, ${theme.palette.primary.light} 0%, ${theme.palette.primary.main} 100%)`,
+            background: `linear-gradient(135deg, ${"#5BE49B"} 0%, ${"#00A76F"} 100%)`,
           }),
         }}
       />
@@ -123,13 +122,13 @@ export default function LayoutOptions({ options, value, onChange }) {
               width: 1,
               height: 56,
               borderRadius: 1,
-              border: `solid 1px ${alpha(theme.palette.grey[500], 0.08)}`,
+              border: `solid 1px "#919EAB"`,
               ...(selected && {
                 bgcolor: 'background.paper',
-                boxShadow: `-24px 8px 24px -4px ${alpha(
-                  theme.palette.mode === 'light'
-                    ? theme.palette.grey[500]
-                    : theme.palette.common.black,
+                boxShadow: `-24px 8px 24px -4px 
+                  "light" === 'light'
+                    ? "#919EAB"
+                    : "#000000",
                   0.08
                 )}`,
               }),

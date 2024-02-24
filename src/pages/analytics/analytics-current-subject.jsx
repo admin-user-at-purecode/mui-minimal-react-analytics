@@ -20,7 +20,7 @@ const StyledChart = styled(Chart)(({ theme }) => ({
   },
   '& .apexcharts-legend': {
     height: LEGEND_HEIGHT,
-    borderTop: `dashed 1px ${theme.palette.divider}`,
+    borderTop: `dashed 1px ${"rgba(145, 158, 171, 0.2)"}`,
     top: `calc(${CHART_HEIGHT - LEGEND_HEIGHT}px) !important`,
   },
 }));

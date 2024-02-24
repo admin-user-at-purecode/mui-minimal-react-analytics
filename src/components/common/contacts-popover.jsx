@@ -10,37 +10,35 @@ import ListItemText from '@mui/material/ListItemText';
 import { fToNow } from '../utils/format-time';
 
 import { _contacts } from '../../_mock';
+import { Icon } from '@iconify/react';
 
-import Iconify from '../iconify';
-
-
-import CustomPopover, { usePopover } from '../custom-popover';
 import { Box } from '@mui/system';
+import { Popover } from '@mui/material';
 
 // ----------------------------------------------------------------------
 
 export default function ContactsPopover() {
-  const popover = usePopover();
+
 
   return (
     <>
+
       <IconButton
         component={m.button}
         whileTap="tap"
         whileHover="hover"
-     
-        color={popover.open ? 'inherit' : 'default'}
-        onClick={popover.onOpen}
-        sx={{
-          ...(popover.open && {
-            bgcolor: (theme) => theme.palette.action.selected,
-          }),
-        }}
+
       >
-        <Iconify icon="solar:users-group-rounded-bold-duotone" width={24} />
+        <Box
+          component={Icon}
+          className="component-iconify"
+          icon={"solar:users-group-rounded-bold-duotone"}
+          sx={{ width: 24, height: 24, }}
+        />
       </IconButton>
 
-      <CustomPopover open={popover.open} onClose={popover.onClose} sx={{ width: 320 }}>
+
+      <Popover sx={{ width: 320 }}>
         <Typography variant="h6" sx={{ p: 1.5 }}>
           Contacts <Typography component="span">({_contacts.length})</Typography>
         </Typography>
@@ -68,7 +66,7 @@ export default function ContactsPopover() {
             </MenuItem>
           ))}
         </Box>
-      </CustomPopover>
+      </Popover>
     </>
   );
 }

@@ -1,4 +1,3 @@
-
 import { forwardRef } from 'react';
 import React from 'react';
 
@@ -7,11 +6,8 @@ import Link from '@mui/material/Link';
 import Tooltip from '@mui/material/Tooltip';
 import { styled } from '@mui/material/styles';
 import ListItemButton from '@mui/material/ListItemButton';
+import { Icon } from '@iconify/react';
 
-
-import Iconify from '../../iconify';
-
-// ----------------------------------------------------------------------
 
 const NavItem = forwardRef(
   (
@@ -58,7 +54,12 @@ const NavItem = forwardRef(
 
         {caption && (
           <Tooltip title={caption} arrow>
-            <Iconify width={16} icon="eva:info-outline" className="caption" />
+            <Box
+              component={Icon}
+              className="component-iconify"
+              icon={"eva:info-outline"}
+              sx={{ width:16, height: 16 }}
+            />
           </Tooltip>
         )}
 
@@ -69,11 +70,7 @@ const NavItem = forwardRef(
         )}
 
         {hasChild && (
-          <Iconify
-            width={16}
-            className="arrow"
-            icon={subItem ? 'eva:arrow-ios-forward-fill' : 'eva:arrow-ios-downward-fill'}
-          />
+          <Box component={Icon} className="component-iconify" icon={subItem ? 'eva:arrow-ios-forward-fill' : 'eva:arrow-ios-downward-fill'} sx={{ width: 16}}/>
         )}
       </StyledNavItem>
     );
@@ -117,6 +114,7 @@ const NavItem = forwardRef(
 );
 
 
+
 export default NavItem;
 
 // ----------------------------------------------------------------------
@@ -130,10 +128,10 @@ const StyledNavItem = styled(ListItemButton, {
 
   const baseStyles = {
     item: {
-      ...theme.typography.body2,
+      ..."0.875rem",
       borderRadius: 6,
       color: theme.palette.text.secondary,
-      fontWeight: theme.typography.fontWeightMedium,
+      fontWeight: "500",
     },
     icon: {
       width: 22,
@@ -146,7 +144,7 @@ const StyledNavItem = styled(ListItemButton, {
     },
     caption: {
       marginLeft: theme.spacing(0.75),
-      color: theme.palette.text.disabled,
+      color: "#919EAB",
     },
     info: {
       display: 'inline-flex',
@@ -182,12 +180,12 @@ const StyledNavItem = styled(ListItemButton, {
       },
       ...(active && {
         color: theme.palette.text.primary,
-        backgroundColor: theme.palette.action.selected,
-        fontWeight: theme.typography.fontWeightSemiBold,
+        backgroundColor: "rgba(145, 158, 171, 0.16)",
+        fontWeight: "600",
       }),
       ...(opened && {
         color: theme.palette.text.primary,
-        backgroundColor: theme.palette.action.hover,
+        backgroundColor: "rgba(145, 158, 171, 0.08)",
       }),
     }),
 
@@ -215,12 +213,12 @@ const StyledNavItem = styled(ListItemButton, {
       },
       ...(active && {
         color: theme.palette.text.primary,
-        backgroundColor: theme.palette.action.selected,
-        fontWeight: theme.typography.fontWeightSemiBold,
+        backgroundColor: "rgba(145, 158, 171, 0.16)",
+        fontWeight: "600",
       }),
       ...(opened && {
         color: theme.palette.text.primary,
-        backgroundColor: theme.palette.action.hover,
+        backgroundColor: "rgba(145, 158, 171, 0.08)",
       }),
     }),
   };

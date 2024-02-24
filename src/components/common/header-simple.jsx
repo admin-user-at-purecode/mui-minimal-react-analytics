@@ -37,7 +37,7 @@ export default function HeaderSimple() {
           }),
           ...(offsetTop && {
             ...bgBlur({
-              color: theme.palette.background.default,
+              color: "#FFFFFF",
             }),
             height: {
               md: HEADER.H_DESKTOP_OFFSET,

@@ -6,7 +6,6 @@ import Collapse from '@mui/material/Collapse';
 
 import NavItem from './nav-item';
 
-// ----------------------------------------------------------------------
 
 export default function NavList({ data, depth, slotProps }) {
 
@@ -62,8 +61,6 @@ export default function NavList({ data, depth, slotProps }) {
   );
 }
 
-
-// ----------------------------------------------------------------------
 
 function NavSubList({ data, depth, slotProps }) {
   return (

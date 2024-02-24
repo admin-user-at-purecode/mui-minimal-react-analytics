@@ -9,8 +9,7 @@ import Typography from '@mui/material/Typography';
 
 import { fShortenNumber } from '../../components/utils/format-number';
 
-import Iconify from '../../components/iconify';
-
+import { Icon } from '@mui/material';
 // ----------------------------------------------------------------------
 
 export default function AnalyticsTrafficBySite({ title, subheader, list, ...other }) {
@@ -21,7 +20,8 @@ export default function AnalyticsTrafficBySite({ title, subheader, list, ...othe
       <Box display="grid" gap={2} gridTemplateColumns="repeat(2, 1fr)" sx={{ p: 3 }}>
         {list.map((site) => (
           <Paper key={site.label} variant="outlined" sx={{ py: 2.5, textAlign: 'center' }}>
-            <Iconify
+           
+          <Box
               icon={site.icon}
               color={
                 (site.value === 'facebook' && '#1877F2') ||
@@ -32,7 +32,6 @@ export default function AnalyticsTrafficBySite({ title, subheader, list, ...othe
               }
               width={32}
             />
-
             <Typography variant="h6" sx={{ mt: 0.5 }}>
               {fShortenNumber(site.total)}
             </Typography>

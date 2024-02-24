@@ -1,6 +1,4 @@
 import { sub } from 'date-fns';
-
-
 import {
   _id,
   _ages,
@@ -28,7 +26,6 @@ import {
   _phoneNumbers,
 } from './assets';
 
-// ----------------------------------------------------------------------
 
 export const _mock = {
   id: (index) => _id[index],

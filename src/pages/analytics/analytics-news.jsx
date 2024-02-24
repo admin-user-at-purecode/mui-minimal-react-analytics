@@ -11,7 +11,7 @@ import ListItemText from '@mui/material/ListItemText';
 
 import { fToNow } from '../../components/utils/format-time';
 
-import Iconify from '../../components/iconify';
+
 
 
 // ----------------------------------------------------------------------
@@ -31,7 +31,7 @@ export default function AnalyticsNews({ title, subheader, list, ...other }) {
         <Button
           size="small"
           color="inherit"
-          endIcon={<Iconify icon="eva:arrow-ios-forward-fill" width={18} sx={{ ml: -0.5 }} />}
+        
         >
           View All
         </Button>
@@ -56,7 +56,7 @@ function NewsItem({ news }) {
         py: 2,
         px: 3,
         minWidth: 640,
-        borderBottom: (theme) => `dashed 1px ${theme.palette.divider}`,
+        borderBottom: (theme) => `dashed 1px ${"rgba(145, 158, 171, 0.2)"}`,
       }}
     >
       <Avatar

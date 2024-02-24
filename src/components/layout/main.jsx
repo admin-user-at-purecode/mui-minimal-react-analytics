@@ -1,15 +1,13 @@
-
 import React from 'react';
 
 import Box from '@mui/material/Box';
 
-import { useResponsive } from '../../components/hooks/use-responsive';
+import { useResponsive } from '../hooks/use-responsive';
 
 import { useSettingsContext } from '../settings';
 
 import { NAV, HEADER } from '../layout/config-layout';
 
-// ----------------------------------------------------------------------
 
 const SPACING = 8;
 
@@ -68,4 +66,3 @@ export default function Main({ children, sx, ...other }) {
     </Box>
   );
 }
-

@@ -1,4 +1,3 @@
-import React from 'react';
 import Stack from '@mui/material/Stack';
 import Badge from '@mui/material/Badge';
 import Divider from '@mui/material/Divider';
@@ -7,7 +6,8 @@ import { useTheme } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Drawer, { drawerClasses } from '@mui/material/Drawer';
-
+import React from 'react';
+import { Icon } from '@iconify/react';
 
 import { paper } from '../../../theme/css';
 
@@ -17,10 +17,8 @@ import PresetsOptions from './presets-options';
 import StretchOptions from './stretch-options';
 import { useSettingsContext } from '../context';
 import FullScreenOption from './fullscreen-option';
-import Iconify from '../../iconify';
+import { Box } from '@mui/system';
 
-
-// ----------------------------------------------------------------------
 
 export default function SettingsDrawer() {
   const theme = useTheme();
@@ -47,13 +45,23 @@ export default function SettingsDrawer() {
       <Tooltip title="Reset">
         <IconButton onClick={settings.onReset}>
           <Badge color="error" variant="dot" invisible={!settings.canReset}>
-            <Iconify icon="solar:restart-bold" />
+          <Box
+              component={Icon}
+              className="component-iconify"
+              icon={"solar:restart-bold"}
+              sx={{ width:20, height: 20 }}
+            />
           </Badge>
         </IconButton>
       </Tooltip>
 
       <IconButton onClick={settings.onClose}>
-        <Iconify icon="mingcute:close-line" />
+      <Box
+              component={Icon}
+              className="component-iconify"
+              icon={"mingcute:close-line"}
+              sx={{ width:20, height: 20 }}
+            />
       </IconButton>
     </Stack>
   );
@@ -130,7 +138,12 @@ export default function SettingsDrawer() {
       >
         Stretch
         <Tooltip title="Only available at large resolutions > 1600px (xl)">
-          <Iconify icon="eva:info-outline" width={16} sx={{ ml: 0.5 }} />
+        <Box
+              component={Icon}
+              className="component-iconify"
+              icon={"eva:info-outline"}
+              sx={{ width:16, height: 16 }}
+            />
         </Tooltip>
       </Typography>
 
@@ -164,7 +177,7 @@ export default function SettingsDrawer() {
       }}
       sx={{
         [`& .${drawerClasses.paper}`]: {
-          ...paper({ theme, bgcolor: theme.palette.background.default }),
+          ...paper({ theme, bgcolor: "#ccc" }),
           width: 280,
         },
       }}
@@ -173,7 +186,7 @@ export default function SettingsDrawer() {
 
       <Divider sx={{ borderStyle: 'dashed' }} />
 
- 
+      <Box>
         <Stack spacing={3} sx={{ p: 3 }}>
           {renderMode}
 
@@ -187,7 +200,7 @@ export default function SettingsDrawer() {
 
           {renderPresets}
         </Stack>
-   
+      </Box>
 
       <FullScreenOption />
     </Drawer>

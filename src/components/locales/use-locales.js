@@ -7,7 +7,6 @@ import { allLangs, defaultLang } from './config-lang';
 import { localStorageGetItem } from '../utils/storage-available';
 import { useSettingsContext } from '../settings/context';
 
-// ----------------------------------------------------------------------
 
 export function useLocales() {
   const langStorage = localStorageGetItem('i18nextLng');
@@ -20,7 +19,6 @@ export function useLocales() {
   };
 }
 
-// ----------------------------------------------------------------------
 
 export function useTranslate() {
   const { t, i18n, ready } = useTranslation();

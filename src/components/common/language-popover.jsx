@@ -5,15 +5,15 @@ import MenuItem from '@mui/material/MenuItem';
 import IconButton from '@mui/material/IconButton';
 
 import { useLocales, useTranslate } from '../locales';
+import { Icon } from '@iconify/react';
 
-import Iconify from '../iconify';
-
-import CustomPopover, { usePopover } from '../custom-popover';
+  import { Popover } from '@mui/material';
+import { Box } from '@mui/system';
 
 // ----------------------------------------------------------------------
 
 export default function LanguagePopover() {
-  const popover = usePopover();
+
 
   const { onChangeLang } = useTranslate();
 
@@ -22,9 +22,8 @@ export default function LanguagePopover() {
   const handleChangeLang = useCallback(
     (newLang) => {
       onChangeLang(newLang);
-      popover.onClose();
     },
-    [onChangeLang, popover]
+    [onChangeLang]
   );
 
   return (
@@ -33,32 +32,38 @@ export default function LanguagePopover() {
         component={m.button}
         whileTap="tap"
         whileHover="hover"
-     
-        onClick={popover.onOpen}
+
         sx={{
           width: 40,
           height: 40,
-          ...(popover.open && {
-            bgcolor: 'action.selected',
-          }),
+
         }}
       >
-        <Iconify icon={currentLang.icon} sx={{ borderRadius: 0.65, width: 28 }} />
+        <Box
+          component={Icon}
+          className="component-iconify"
+          icon={"flagpack:gb-nir"}
+          sx={{ width: 28, height: 28 }}
+        />
       </IconButton>
 
-      <CustomPopover open={popover.open} onClose={popover.onClose} sx={{ width: 160 }}>
+      <Popover sx={{ width: 160 }}>
         {allLangs.map((option) => (
           <MenuItem
             key={option.value}
             selected={option.value === currentLang.value}
             onClick={() => handleChangeLang(option.value)}
           >
-            <Iconify icon={option.icon} sx={{ borderRadius: 0.65, width: 28 }} />
-
+            <Box
+              component={Icon}
+              className="component-iconify"
+              icon={"flagpack:gb-nir"}
+              sx={{ width:20, height: 20 }}
+            />
             {option.label}
           </MenuItem>
         ))}
-      </CustomPopover>
+      </Popover>
     </>
   );
 }

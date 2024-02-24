@@ -1,21 +1,12 @@
 import React, { useMemo } from 'react';
-
-
 import { useTranslate } from '../locales';
-
-
-import Iconify from '../iconify';
-import SvgColor from '../svg-color';
+import { Icon } from '@iconify/react';
 import { Typography } from '@mui/material';
+import { Box } from '@mui/system';
 
-// ----------------------------------------------------------------------
 
 const icon = (name) => (
-  <SvgColor src={`/assets/icons/navbar/${name}.svg`} sx={{ width: 1, height: 1 }} />
-  // OR
-  // <Iconify icon="fluent:mail-24-filled" />
-  // https://icon-sets.iconify.design/solar/
-  // https://www.streamlinehq.com/icons
+  <Box src={`/assets/icons/navbar/${name}.svg`} sx={{ width: 1, height: 1 }} />
 );
 
 const ICONS = {
@@ -45,7 +36,6 @@ const ICONS = {
   dashboard: icon('ic_dashboard'),
 };
 
-// ----------------------------------------------------------------------
 
 export function useNavData() {
   const { t } = useTranslate();
@@ -53,8 +43,7 @@ export function useNavData() {
   const data = useMemo(
     () => [
       // OVERVIEW
-      // ----------------------------------------------------------------------
-      {
+            {
         subheader: t('overview'),
         items: [
           {
@@ -85,8 +74,7 @@ export function useNavData() {
       },
 
       // MANAGEMENT
-      // ----------------------------------------------------------------------
-      {
+            {
         subheader: t('management'),
         items: [
           // USER
@@ -266,12 +254,13 @@ export function useNavData() {
             icon: ICONS.disabled,
             disabled: true,
           },
+          
           {
             title: t('item_label'),
             path: '#label',
             icon: ICONS.label,
             info: (
-              <Typography color="info" startIcon={<Iconify icon="solar:bell-bing-bold-duotone" />}>
+              <Typography color="info" startIcon={<Box component={Icon} className="component-iconify" icon={'solar:bell-bing-bold-duotone'}/>}>
                 NEW
               </Typography>
             ),

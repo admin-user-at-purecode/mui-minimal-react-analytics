@@ -1,4 +1,3 @@
-
 import { memo, useState, useCallback } from 'react';
 import React from 'react';
 import Stack from '@mui/material/Stack';
@@ -7,7 +6,6 @@ import ListSubheader from '@mui/material/ListSubheader';
 
 import NavList from './nav-list';
 
-// ----------------------------------------------------------------------
 
 function NavSectionVertical({ data, slotProps, ...other }) {
   return (
@@ -24,11 +22,8 @@ function NavSectionVertical({ data, slotProps, ...other }) {
   );
 }
 
-
-
 export default memo(NavSectionVertical);
 
-// ----------------------------------------------------------------------
 
 function Group({ subheader, items, slotProps }) {
   const [open, setOpen] = useState(true);

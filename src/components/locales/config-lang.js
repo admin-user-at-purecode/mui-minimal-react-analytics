@@ -33,7 +33,6 @@ import {
 } from '@mui/x-data-grid';
 
 // PLEASE REMOVE `LOCAL STORAGE` WHEN YOU CHANGE SETTINGS.
-// ----------------------------------------------------------------------
 
 export const allLangs = [
   {

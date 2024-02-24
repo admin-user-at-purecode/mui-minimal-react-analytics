@@ -1,6 +1,6 @@
-import { alpha, styled } from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 
-import { bgBlur } from '../../theme/css';
+
 
 // ----------------------------------------------------------------------
 
@@ -35,12 +35,12 @@ export const StyledArrow = styled('span')(({ arrow, theme }) => {
     position: 'absolute',
     borderBottomLeftRadius: SIZE / 4,
     clipPath: 'polygon(0% 0%, 100% 100%, 0% 100%)',
-    border: `solid 1px ${alpha(
-      theme.palette.mode === 'light' ? theme.palette.grey[500] : theme.palette.common.black,
+    border: `solid 1px ${(
+      "light" === 'light' ? "#919EAB"[500] : "#000000",
       0.12
     )}`,
     ...bgBlur({
-      color: theme.palette.background.paper,
+      color: "#FFFFFF",
     }),
     // Top
     ...(arrow === 'top-left' && { ...topStyle, left: 20 }),

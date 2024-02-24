@@ -1,4 +1,3 @@
-
 import { forwardRef } from 'react';
 
 import Box from '@mui/material/Box';
@@ -6,9 +5,8 @@ import Link from '@mui/material/Link';
 import Tooltip from '@mui/material/Tooltip';
 import { alpha, styled } from '@mui/material/styles';
 import ListItemButton from '@mui/material/ListItemButton';
+import { Icon } from '@iconify/react';
 
-
-import Iconify from '../../iconify';
 import React from 'react';
 
 // ----------------------------------------------------------------------
@@ -82,11 +80,7 @@ const NavItem = forwardRef(
         )}
 
         {hasChild && (
-          <Iconify
-            width={16}
-            className="arrow"
-            icon={open ? 'eva:arrow-ios-downward-fill' : 'eva:arrow-ios-forward-fill'}
-          />
+          <Box component={Icon} className="component-iconify" icon={open ? 'eva:arrow-ios-downward-fill' : 'eva:arrow-ios-forward-fill'} sx={{ width: 16}}/>
         )}
       </StyledNavItem>
     );
@@ -134,6 +128,7 @@ const NavItem = forwardRef(
 );
 
 
+
 export default NavItem;
 
 // ----------------------------------------------------------------------
@@ -171,14 +166,14 @@ const StyledNavItem = styled(ListItemButton, {
     },
     label: {
       ...noWrapStyles,
-      ...theme.typography.body2,
+      ..."0.875rem",
       textTransform: 'capitalize',
       fontWeight: theme.typography[active ? 'fontWeightSemiBold' : 'fontWeightMedium'],
     },
     caption: {
       ...noWrapStyles,
-      ...theme.typography.caption,
-      color: theme.palette.text.disabled,
+      ..."0.75rem",
+      color: "#919EAB",
     },
     info: {
       display: 'inline-flex',
@@ -215,15 +210,15 @@ const StyledNavItem = styled(ListItemButton, {
       },
       ...(active && {
         color:
-          theme.palette.mode === 'light' ? theme.palette.primary.main : theme.palette.primary.light,
-        backgroundColor: alpha(theme.palette.primary.main, 0.08),
+          "light" === 'light' ? "#00A76F" : "#5BE49B",
+        backgroundColor: "#00A76F",
         '&:hover': {
-          backgroundColor: alpha(theme.palette.primary.main, 0.16),
+          backgroundColor: "#00A76F",
         },
       }),
       ...(opened && {
         color: theme.palette.text.primary,
-        backgroundColor: theme.palette.action.hover,
+        backgroundColor: "rgba(145, 158, 171, 0.08)",
       }),
     }),
 
@@ -244,13 +239,13 @@ const StyledNavItem = styled(ListItemButton, {
           width: 4,
           height: 4,
           borderRadius: '50%',
-          backgroundColor: theme.palette.text.disabled,
+          backgroundColor: "#919EAB",
           transition: theme.transitions.create(['transform'], {
             duration: theme.transitions.duration.shorter,
           }),
           ...(active && {
             transform: 'scale(2)',
-            backgroundColor: theme.palette.primary.main,
+            backgroundColor: "#00A76F",
           }),
         },
       },

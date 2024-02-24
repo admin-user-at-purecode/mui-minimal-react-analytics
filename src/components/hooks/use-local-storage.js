@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
 
-// ----------------------------------------------------------------------
 
 export function useLocalStorage(key, initialState) {
   const [state, setState] = useState(initialState);
@@ -54,7 +53,6 @@ export function useLocalStorage(key, initialState) {
   };
 }
 
-// ----------------------------------------------------------------------
 
 export const getStorage = (key) => {
   let value = null;

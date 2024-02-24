@@ -4,11 +4,11 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import { alpha, useTheme } from '@mui/material/styles';
+import {  useTheme } from '@mui/material/styles';
 
 import { fShortenNumber } from '../../components/utils/format-number';
 
-import { bgGradient } from '../../theme/css';
+
 
 // ----------------------------------------------------------------------
 
@@ -26,11 +26,7 @@ export default function AnalyticsWidgetSummary({
     <Stack
       alignItems="center"
       sx={{
-        ...bgGradient({
-          direction: '135deg',
-          startColor: alpha(theme.palette[color].light, 0.2),
-          endColor: alpha(theme.palette[color].main, 0.2),
-        }),
+       
         py: 5,
         borderRadius: 2,
         textAlign: 'center',

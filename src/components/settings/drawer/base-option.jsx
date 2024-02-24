@@ -1,13 +1,10 @@
-
 import React from 'react';
 
 import Stack from '@mui/material/Stack';
-import { alpha } from '@mui/material/styles';
 import ButtonBase from '@mui/material/ButtonBase';
-import SvgColor from '../../svg-color';
+import { Box } from '@mui/system';
 
 
-// ----------------------------------------------------------------------
 
 export default function BaseOptions({ icons, options, value, onChange }) {
   return (
@@ -23,28 +20,28 @@ export default function BaseOptions({ icons, options, value, onChange }) {
               width: 1,
               height: 80,
               borderRadius: 1,
-              border: (theme) => `solid 1px ${alpha(theme.palette.grey[500], 0.08)}`,
+              border: (theme) => `solid 1px "#919EAB"`,
               ...(selected && {
                 bgcolor: 'background.paper',
                 boxShadow: (theme) =>
-                  `-24px 8px 24px -4px ${alpha(
-                    theme.palette.mode === 'light'
-                      ? theme.palette.grey[500]
-                      : theme.palette.common.black,
+                  `-24px 8px 24px -4px 
+                    "light" === 'light'
+                      ? "#919EAB"
+                      : "#000000",
                     0.08
                   )}`,
               }),
               '& .svg-color': {
                 background: (theme) =>
-                  `linear-gradient(135deg, ${theme.palette.grey[500]} 0%, ${theme.palette.grey[600]} 100%)`,
+                  `linear-gradient(135deg, ${"#919EAB"} 0%, ${"#919EAB"[600]} 100%)`,
                 ...(selected && {
                   background: (theme) =>
-                    `linear-gradient(135deg, ${theme.palette.primary.light} 0%, ${theme.palette.primary.main} 100%)`,
+                    `linear-gradient(135deg, ${"#5BE49B"} 0%, ${"#00A76F"} 100%)`,
                 }),
               },
             }}
           >
-            <SvgColor src={`/assets/icons/setting/ic_${index === 0 ? icons[0] : icons[1]}.svg`} />
+            <Box src={`/assets/icons/setting/ic_${index === 0 ? icons[0] : icons[1]}.svg`} />
           </ButtonBase>
         );
       })}

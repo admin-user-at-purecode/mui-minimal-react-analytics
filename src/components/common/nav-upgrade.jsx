@@ -7,7 +7,8 @@ import React from 'react';
 
 import { useMockedUser } from '../hooks/use-mocked-user';
 
-// ----------------------------------------------------------------------
+
+
 
 export default function NavUpgrade() {
   const { user } = useMockedUser();

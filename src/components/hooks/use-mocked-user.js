@@ -10,7 +10,6 @@ import { _mock } from '../../_mock';
 // import { useAuthContext } from 'src/auth/hooks';
 // const { user } = useAuthContext();
 
-// ----------------------------------------------------------------------
 
 export function useMockedUser() {
   const user = {

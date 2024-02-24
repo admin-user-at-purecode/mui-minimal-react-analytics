@@ -1,6 +1,6 @@
 import merge from 'lodash/merge';
 
-import { alpha, useTheme } from '@mui/material/styles';
+import {  useTheme } from '@mui/material/styles';
 
 import { useResponsive } from '../hooks/use-responsive';
 
@@ -15,31 +15,31 @@ export default function useChart(options) {
     show: true,
     label: 'Total',
     color: theme.palette.text.secondary,
-    fontSize: theme.typography.subtitle2.fontSize,
-    fontWeight: theme.typography.subtitle2.fontWeight,
-    lineHeight: theme.typography.subtitle2.lineHeight,
+    fontSize: "0.875rem",
+    fontWeight: "600",
+    lineHeight: "1.571",
   };
 
   const LABEL_VALUE = {
     offsetY: 8,
     color: theme.palette.text.primary,
-    fontSize: theme.typography.h3.fontSize,
-    fontWeight: theme.typography.h3.fontWeight,
-    lineHeight: theme.typography.h3.lineHeight,
+    fontSize: "1.5rem",
+    fontWeight: "700",
+    lineHeight: "1.5",
   };
 
   const baseOptions = {
     // Colors
     colors: [
-      theme.palette.primary.main,
-      theme.palette.warning.main,
-      theme.palette.info.main,
-      theme.palette.error.main,
-      theme.palette.success.main,
-      theme.palette.warning.dark,
-      theme.palette.success.darker,
-      theme.palette.info.dark,
-      theme.palette.info.darker,
+      "#00A76F",
+      "#FFAB00",
+      "#00B8D9",
+      "#FF5630",
+      "#22C55E",
+      "#B76E00",
+      "#065E49",
+      "#006C9C",
+      "#006C9C",
     ],
 
     // Chart
@@ -47,8 +47,8 @@ export default function useChart(options) {
       toolbar: { show: false },
       zoom: { enabled: false },
       // animations: { enabled: false },
-      foreColor: theme.palette.text.disabled,
-      fontFamily: theme.typography.fontFamily,
+      foreColor: "#919EAB",
+      fontFamily: "Public Sans, sans-serif",
     },
 
     // States
@@ -94,7 +94,7 @@ export default function useChart(options) {
     // Grid
     grid: {
       strokeDashArray: 3,
-      borderColor: theme.palette.divider,
+      borderColor: "rgba(145, 158, 171, 0.2)",
       xaxis: {
         lines: {
           show: false,
@@ -111,7 +111,7 @@ export default function useChart(options) {
     // Markers
     markers: {
       size: 0,
-      strokeColors: theme.palette.background.paper,
+      strokeColors: "#FFFFFF",
     },
 
     // Tooltip
@@ -165,7 +165,7 @@ export default function useChart(options) {
       radialBar: {
         track: {
           strokeWidth: '100%',
-          background: alpha(theme.palette.grey[500], 0.16),
+          background: ("#919EAB"[500], 0.16),
         },
         dataLabels: {
           value: LABEL_VALUE,
@@ -177,18 +177,18 @@ export default function useChart(options) {
       radar: {
         polygons: {
           fill: { colors: ['transparent'] },
-          strokeColors: theme.palette.divider,
-          connectorColors: theme.palette.divider,
+          strokeColors: "rgba(145, 158, 171, 0.2)",
+          connectorColors: "rgba(145, 158, 171, 0.2)",
         },
       },
 
       // polarArea
       polarArea: {
         rings: {
-          strokeColor: theme.palette.divider,
+          strokeColor: "rgba(145, 158, 171, 0.2)",
         },
         spokes: {
-          connectorColors: theme.palette.divider,
+          connectorColors: "rgba(145, 158, 171, 0.2)",
         },
       },
     },

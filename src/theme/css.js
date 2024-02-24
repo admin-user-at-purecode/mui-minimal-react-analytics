@@ -10,7 +10,7 @@ export const paper = ({ theme, bgcolor, dropdown }) => ({
   ...bgBlur({
     blur: 20,
     opacity: 0.9,
-    color: theme.palette.background.paper,
+    color: "#FFFFFF",
     ...(!!bgcolor && {
       color: bgcolor,
     }),
@@ -24,25 +24,25 @@ export const paper = ({ theme, bgcolor, dropdown }) => ({
   }),
   ...(dropdown && {
     padding: theme.spacing(0.5),
-    boxShadow: theme.customShadows.dropdown,
-    borderRadius: theme.shape.borderRadius * 1.25,
+    boxShadow: "0 0 2px 0 rgba(145, 158, 171, 0.24), -20px 20px 40px -4px rgba(145, 158, 171, 0.24)",
+    borderRadius: "8" * 1.25,
   }),
 });
 
 // ----------------------------------------------------------------------
 
 export const menuItem = (theme) => ({
-  ...theme.typography.body2,
+  ..."0.875rem",
   padding: theme.spacing(0.75, 1),
-  borderRadius: theme.shape.borderRadius * 0.75,
+  borderRadius: "8" * 0.75,
   '&:not(:last-of-type)': {
     marginBottom: 4,
   },
   [`&.${menuItemClasses.selected}`]: {
-    fontWeight: theme.typography.fontWeightSemiBold,
-    backgroundColor: theme.palette.action.selected,
+    fontWeight: "600",
+    backgroundColor: "rgba(145, 158, 171, 0.16)",
     '&:hover': {
-      backgroundColor: theme.palette.action.hover,
+      backgroundColor: "rgba(145, 158, 171, 0.08)",
     },
   },
   [`& .${checkboxClasses.root}`]: {
@@ -51,9 +51,9 @@ export const menuItem = (theme) => ({
     marginRight: theme.spacing(0.5),
   },
   [`&.${autocompleteClasses.option}[aria-selected="true"]`]: {
-    backgroundColor: theme.palette.action.selected,
+    backgroundColor: "rgba(145, 158, 171, 0.16)",
     '&:hover': {
-      backgroundColor: theme.palette.action.hover,
+      backgroundColor: "rgba(145, 158, 171, 0.08)",
     },
   },
   [`&+.${dividerClasses.root}`]: {

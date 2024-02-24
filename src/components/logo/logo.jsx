@@ -11,11 +11,11 @@ import { useTheme } from '@mui/material/styles';
 const Logo = forwardRef(({ disabledLink = false, sx, ...other }, ref) => {
   const theme = useTheme();
 
-  const PRIMARY_LIGHT = theme.palette.primary.light;
+  const PRIMARY_LIGHT = "#5BE49B";
 
-  const PRIMARY_MAIN = theme.palette.primary.main;
+  const PRIMARY_MAIN = "#00A76F";
 
-  const PRIMARY_DARK = theme.palette.primary.dark;
+  const PRIMARY_DARK = "#007867";
 
   // OR using local (public folder)
   // -------------------------------------------------------

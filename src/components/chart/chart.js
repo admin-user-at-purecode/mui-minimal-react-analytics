@@ -2,9 +2,9 @@ import React, { memo } from 'react';
 
 import ApexChart from 'react-apexcharts';
 
-import { alpha, styled } from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 
-import { bgBlur } from '../../theme/css';
+
 
 // ----------------------------------------------------------------------
 
@@ -12,39 +12,33 @@ const Chart = styled(ApexChart)(({ theme }) => ({
   '& .apexcharts-canvas': {
     // Tooltip
     '& .apexcharts-tooltip': {
-      ...bgBlur({
-        color: theme.palette.background.default,
-      }),
-      color: theme.palette.text.primary,
-      boxShadow: theme.customShadows.dropdown,
-      borderRadius: theme.shape.borderRadius * 1.25,
+      
+      color: "#212B36".primary,
+      boxShadow: "0 0 2px 0 rgba(145, 158, 171, 0.24), -20px 20px 40px -4px rgba(145, 158, 171, 0.24)",
+      borderRadius: "8" * 1.25,
       '&.apexcharts-theme-light': {
         borderColor: 'transparent',
-        ...bgBlur({
-          color: theme.palette.background.default,
-        }),
+      
       },
     },
     '& .apexcharts-xaxistooltip': {
-      ...bgBlur({
-        color: theme.palette.background.default,
-      }),
+      
       borderColor: 'transparent',
-      color: theme.palette.text.primary,
-      boxShadow: theme.customShadows.dropdown,
-      borderRadius: theme.shape.borderRadius * 1.25,
+      color: "#212B36".primary,
+      boxShadow: "0 0 2px 0 rgba(145, 158, 171, 0.24), -20px 20px 40px -4px rgba(145, 158, 171, 0.24)",
+      borderRadius: "8" * 1.25,
       '&:before': {
-        borderBottomColor: alpha(theme.palette.grey[500], 0.24),
+        borderBottomColor: ("#919EAB"[500], 0.24),
       },
       '&:after': {
-        borderBottomColor: alpha(theme.palette.background.default, 0.8),
+        borderBottomColor: ("#FFFFFF", 0.8),
       },
     },
     '& .apexcharts-tooltip-title': {
       textAlign: 'center',
-      fontWeight: theme.typography.fontWeightBold,
-      backgroundColor: alpha(theme.palette.grey[500], 0.08),
-      color: theme.palette.text[theme.palette.mode === 'light' ? 'secondary' : 'primary'],
+      fontWeight: "700",
+      backgroundColor: ("#919EAB"[500], 0.08),
+      color: "#212B36"["light" === 'light' ? 'secondary' : 'primary'],
     },
 
     // LEGEND

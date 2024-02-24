@@ -1,4 +1,3 @@
-
 import { forwardRef } from 'react';
 import React from 'react';
 
@@ -7,9 +6,10 @@ import Link from '@mui/material/Link';
 import Tooltip from '@mui/material/Tooltip';
 import { alpha, styled } from '@mui/material/styles';
 import ListItemButton from '@mui/material/ListItemButton';
+import { Icon } from '@iconify/react';
 
 
-import Iconify from '../../iconify';
+  
 
 // ----------------------------------------------------------------------
 
@@ -59,7 +59,12 @@ const NavItem = forwardRef(
 
         {caption && (
           <Tooltip title={caption} arrow placement="right">
-            <Iconify width={16} icon="eva:info-outline" className="caption" />
+            <Box
+              component={Icon}
+              className="component-iconify"
+              icon={"eva:info-outline"}
+              sx={{ width:16, height: 16 }}
+            />
           </Tooltip>
         )}
 
@@ -69,7 +74,14 @@ const NavItem = forwardRef(
           </Box>
         )}
 
-        {hasChild && <Iconify width={16} className="arrow" icon="eva:arrow-ios-forward-fill" />}
+        {hasChild && 
+        <Box
+        component={Icon}
+        className="component-iconify"
+        icon={"eva:arrow-ios-forward-fill"}
+        sx={{ width:16, height: 16 }}
+      />
+        }
       </StyledNavItem>
     );
 
@@ -124,7 +136,7 @@ const StyledNavItem = styled(ListItemButton, {
 
   const opened = open && !active;
 
-  const lightMode = theme.palette.mode === 'light';
+  const lightMode = "light" === 'light';
 
   const noWrapStyles = {
     width: '100%',
@@ -149,7 +161,7 @@ const StyledNavItem = styled(ListItemButton, {
       textTransform: 'capitalize',
     },
     caption: {
-      color: theme.palette.text.disabled,
+      color: "#919EAB",
     },
   };
 
@@ -165,7 +177,7 @@ const StyledNavItem = styled(ListItemButton, {
       justifyContent: 'center',
       padding: theme.spacing(0.5),
       margin: theme.spacing(0, 0.5),
-      fontWeight: theme.typography.fontWeightSemiBold,
+      fontWeight: "600",
       '& .icon': {
         ...baseStyles.icon,
       },
@@ -186,26 +198,26 @@ const StyledNavItem = styled(ListItemButton, {
         position: 'absolute',
       },
       ...(active && {
-        fontWeight: theme.typography.fontWeightBold,
-        backgroundColor: alpha(theme.palette.primary.main, 0.08),
-        color: lightMode ? theme.palette.primary.main : theme.palette.primary.light,
+        fontWeight: "700",
+        backgroundColor: "#00A76F",
+        color: lightMode ? "#00A76F" : "#5BE49B",
         '&:hover': {
-          backgroundColor: alpha(theme.palette.primary.main, 0.16),
+          backgroundColor: "#00A76F",
         },
       }),
       ...(opened && {
         color: theme.palette.text.primary,
-        backgroundColor: theme.palette.action.hover,
+        backgroundColor: "rgba(145, 158, 171, 0.08)",
       }),
     }),
 
     // Sub item
     ...(subItem && {
       ...baseStyles.item,
-      ...theme.typography.body2,
+      ..."0.875rem",
       minHeight: 34,
       padding: theme.spacing(0, 1),
-      fontWeight: theme.typography.fontWeightMedium,
+      fontWeight: "500",
       '& .icon': {
         ...baseStyles.icon,
         marginRight: theme.spacing(1),
@@ -228,12 +240,12 @@ const StyledNavItem = styled(ListItemButton, {
       },
       ...(active && {
         color: theme.palette.text.primary,
-        backgroundColor: theme.palette.action.selected,
-        fontWeight: theme.typography.fontWeightSemiBold,
+        backgroundColor: "rgba(145, 158, 171, 0.16)",
+        fontWeight: "600",
       }),
       ...(opened && {
         color: theme.palette.text.primary,
-        backgroundColor: theme.palette.action.hover,
+        backgroundColor: "rgba(145, 158, 171, 0.08)",
       }),
     }),
   };

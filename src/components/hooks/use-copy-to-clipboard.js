@@ -1,6 +1,5 @@
 import { useState } from 'react';
 
-// ----------------------------------------------------------------------
 
 export function useCopyToClipboard() {
   const [copiedText, setCopiedText] = useState(null);

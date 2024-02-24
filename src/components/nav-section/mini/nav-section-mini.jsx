@@ -1,6 +1,5 @@
-import React, { memo } from 'react';
-
-
+import { memo } from 'react';
+import React from 'react';
 import Stack from '@mui/material/Stack';
 
 import NavList from './nav-list';
@@ -16,6 +15,7 @@ function NavSectionMini({ data, slotProps, ...other }) {
     </Stack>
   );
 }
+
 
 export default memo(NavSectionMini);
 

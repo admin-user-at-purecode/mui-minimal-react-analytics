@@ -1,4 +1,3 @@
-
 import { useRef, useState, useEffect, useCallback } from 'react';
 import React from 'react';
 
@@ -8,7 +7,6 @@ import Popover from '@mui/material/Popover';
 
 import NavItem from './nav-item';
 
-// ----------------------------------------------------------------------
 
 export default function NavList({ data, depth, slotProps }) {
   const navRef = useRef(null);
@@ -52,7 +50,6 @@ export default function NavList({ data, depth, slotProps }) {
         hasChild={!!data.children}
         currentRole={slotProps?.currentRole}
         //
-        
         className='active'
         sx={depth === 1 ? slotProps?.rootItem : slotProps?.subItem}
       />
@@ -89,7 +86,6 @@ export default function NavList({ data, depth, slotProps }) {
 }
 
 
-// ----------------------------------------------------------------------
 
 function NavSubList({ data, depth, slotProps }) {
   return (
@@ -100,4 +96,3 @@ function NavSubList({ data, depth, slotProps }) {
     </Stack>
   );
 }
-

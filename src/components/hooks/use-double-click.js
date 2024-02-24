@@ -1,6 +1,5 @@
 import { useRef, useCallback } from 'react';
 
-// ----------------------------------------------------------------------
 
 export function useDoubleClick({ click, doubleClick, timeout = 250 }) {
   const clickTimeout = useRef();

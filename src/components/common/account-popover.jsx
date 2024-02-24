@@ -12,7 +12,7 @@ import Typography from '@mui/material/Typography';
 
 import { useMockedUser } from '../hooks/use-mocked-user';
 
-import CustomPopover, { usePopover } from '../custom-popover';
+import { Popover } from '@mui/material';
 
 // ----------------------------------------------------------------------
 
@@ -34,7 +34,7 @@ const OPTIONS = [
 export default function AccountPopover() {
 
   const { user } = useMockedUser();
-  const popover = usePopover();
+
 
 
   return (
@@ -43,16 +43,12 @@ export default function AccountPopover() {
         component={m.button}
         whileTap="tap"
         whileHover="hover"
-       
-        onClick={popover.onOpen}
+        
         sx={{
           width: 40,
           height: 40,
-          background: (theme) => alpha(theme.palette.grey[500], 0.08),
-          ...(popover.open && {
-            background: (theme) =>
-              `linear-gradient(135deg, ${theme.palette.primary.light} 0%, ${theme.palette.primary.main} 100%)`,
-          }),
+          background: (theme) => "#919EAB",
+     
         }}
       >
         <Avatar
@@ -61,14 +57,14 @@ export default function AccountPopover() {
           sx={{
             width: 36,
             height: 36,
-            border: (theme) => `solid 2px ${theme.palette.background.default}`,
+            border: (theme) => `solid 2px ${"#FFFFFF"}`,
           }}
         >
           {user?.displayName?.charAt(0).toUpperCase()}
         </Avatar>
       </IconButton>
 
-      <CustomPopover open={popover.open} onClose={popover.onClose} sx={{ width: 200, p: 0 }}>
+      <Popover  sx={{ width: 200, p: 0 }}>
         <Box sx={{ p: 2, pb: 1.5 }}>
           <Typography variant="subtitle2" noWrap>
             {user?.displayName}
@@ -96,7 +92,7 @@ export default function AccountPopover() {
         >
           Logout
         </MenuItem>
-      </CustomPopover>
+      </Popover>
     </>
   );
 }

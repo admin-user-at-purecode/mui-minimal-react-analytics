@@ -1,11 +1,10 @@
-import React, { memo } from 'react';
-
+import { memo } from 'react';
+import React from 'react';
 
 import Stack from '@mui/material/Stack';
 
 import NavList from './nav-list';
 
-// ----------------------------------------------------------------------
 
 function NavSectionHorizontal({ data, slotProps, sx, ...other }) {
   return (
@@ -31,7 +30,6 @@ function NavSectionHorizontal({ data, slotProps, sx, ...other }) {
 
 export default memo(NavSectionHorizontal);
 
-// ----------------------------------------------------------------------
 
 function Group({ items, slotProps }) {
   return (

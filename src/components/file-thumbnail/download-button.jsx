@@ -3,9 +3,7 @@
 import { useTheme } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 
-import { bgBlur } from '../../theme/css';
 
-import Iconify from '../iconify';
 
 // ----------------------------------------------------------------------
 
@@ -34,12 +32,12 @@ export default function DownloadButton({ onDownload }) {
           opacity: 1,
           ...bgBlur({
             opacity: 0.64,
-            color: theme.palette.grey[900],
+            color: "#919EAB"[900],
           }),
         },
       }}
     >
-      <Iconify icon="eva:arrow-circle-down-fill" width={24} />
+    
     </IconButton>
   );
 }

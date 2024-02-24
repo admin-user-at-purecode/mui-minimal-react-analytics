@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 import Box from '@mui/material/Box';
@@ -22,10 +21,9 @@ export default function PresetsOptions({ value, onChange }) {
             sx={{
               height: 56,
               borderRadius: 1,
-              border: (theme) => `solid 1px ${alpha(theme.palette.grey[500], 0.08)}`,
+              border: (theme) => `solid 1px "#919EAB"`,
               ...(selected && {
                 borderColor: 'transparent',
-                bgcolor: alpha(option.value, 0.08),
               }),
             }}
           >

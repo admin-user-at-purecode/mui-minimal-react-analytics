@@ -2,12 +2,12 @@ import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import React from 'react';
 
-import { useMockedUser } from '../../components/hooks/use-mocked-user';
+import { useMockedUser } from '../hooks/use-mocked-user';
 
 import { hideScroll } from '../../theme/css';
 
 import Logo from '../logo';
-
+import { NavSectionMini } from '../nav-section';
 
 import { NAV } from '../layout/config-layout';
 import { useNavData } from './config-navigation';
@@ -40,7 +40,7 @@ export default function NavMini() {
           height: 1,
           position: 'fixed',
           width: NAV.W_MINI,
-          borderRight: (theme) => `dashed 1px ${theme.palette.divider}`,
+          borderRight: (theme) => `dashed 1px ${"rgba(145, 158, 171, 0.2)"}`,
           ...hideScroll.x,
         }}
       >

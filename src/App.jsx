@@ -1,31 +1,30 @@
-import React from 'react';
-import './global.css'
-import ThemeProvider from './theme'
-import { SettingsDrawer, SettingsProvider } from './components/settings';
+import React from "react";
+import "./global.css";
 
-import Layout from './components/layout';
-import AnalyticsPage from './pages/analytics/analytics';
+import AnalyticsPage from "./pages/analytics/analytics";
+
+import { SettingsDrawer ,  SettingsProvider} from "./components/settings";
+import Layout from "./components/layout";
+import ThemeProvider from "./theme";
 function App() {
   return (
-            <SettingsProvider
-              defaultSettings={{
-                themeMode: 'light', // 'light' | 'dark'
-                themeDirection: 'ltr', //  'rtl' | 'ltr'
-                themeContrast: 'default', // 'default' | 'bold'
-                themeLayout: 'vertical', // 'vertical' | 'horizontal' | 'mini'
-                themeColorPresets: 'default', // 'default' | 'cyan' | 'purple' | 'blue' | 'orange' | 'red'
-                themeStretch: false,
-              }}
-            >
-              <ThemeProvider>
-             
-                      <SettingsDrawer />
-                      <Layout>
-                        <AnalyticsPage/>
-                      </Layout>
-             
-              </ThemeProvider>
-            </SettingsProvider>
+    <SettingsProvider
+      defaultSettings={{
+        themeMode: "light", // 'light' | 'dark'
+        themeDirection: "ltr", //  'rtl' | 'ltr'
+        themeContrast: "default", // 'default' | 'bold'
+        themeLayout: "vertical", // 'vertical' | 'horizontal' | 'mini'
+        themeColorPresets: "default", // 'default' | 'cyan' | 'purple' | 'blue' | 'orange' | 'red'
+        themeStretch: false,
+      }}
+    >
+      <ThemeProvider>
+        <SettingsDrawer />
+        <Layout>
+          <AnalyticsPage />
+        </Layout>
+      </ThemeProvider>
+    </SettingsProvider>
   );
 }
 

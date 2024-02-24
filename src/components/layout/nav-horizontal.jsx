@@ -1,14 +1,15 @@
-import React, { memo } from 'react';
+import { memo } from 'react';
+import React from 'react';
 
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import { useTheme } from '@mui/material/styles';
 
-import { useMockedUser } from '../../components/hooks/use-mocked-user';
+import { useMockedUser } from '../hooks/use-mocked-user';
 
 import { bgBlur } from '../../theme/css';
 
-
+import { NavSectionHorizontal } from '../nav-section';
 
 import { HEADER } from '../layout/config-layout';
 import { useNavData } from './config-navigation';
@@ -33,7 +34,7 @@ function NavHorizontal() {
       <Toolbar
         sx={{
           ...bgBlur({
-            color: theme.palette.background.default,
+            color: "#FFFFFF",
           }),
         }}
       >

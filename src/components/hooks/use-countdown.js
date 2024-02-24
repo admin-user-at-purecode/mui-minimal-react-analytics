@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
 
-// ----------------------------------------------------------------------
 
 export function useCountdownDate(date) {
   const [countdown, setCountdown] = useState({
@@ -52,7 +51,6 @@ export function useCountdownDate(date) {
 // Usage
 // const countdown = useCountdown(new Date('07/07/2022 21:30'));
 
-// ----------------------------------------------------------------------
 
 export function useCountdownSeconds(initCountdown) {
   const [countdown, setCountdown] = useState(initCountdown);

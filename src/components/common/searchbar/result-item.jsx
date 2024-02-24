@@ -1,11 +1,10 @@
 
-
 import Box from '@mui/material/Box';
 import { alpha } from '@mui/material/styles';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemButton from '@mui/material/ListItemButton';
+import { Typography } from '@mui/material';
 
-import Typography from '@mui/material/Typography';
 
 // ----------------------------------------------------------------------
 
@@ -17,12 +16,12 @@ export default function ResultItem({ title, path, groupLabel, onClickItem }) {
         borderWidth: 1,
         borderStyle: 'dashed',
         borderColor: 'transparent',
-        borderBottomColor: (theme) => theme.palette.divider,
+        borderBottomColor: (theme) => "rgba(145, 158, 171, 0.2)",
         '&:hover': {
           borderRadius: 1,
-          borderColor: (theme) => theme.palette.primary.main,
+          borderColor: (theme) => "#00A76F",
           backgroundColor: (theme) =>
-            alpha(theme.palette.primary.main, theme.palette.action.hoverOpacity),
+            "#00A76F",
         },
       }}
     >
@@ -60,4 +59,3 @@ export default function ResultItem({ title, path, groupLabel, onClickItem }) {
     </ListItemButton>
   );
 }
-

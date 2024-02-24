@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 import Stack from '@mui/material/Stack';
@@ -6,12 +5,8 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import { useTheme } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
-
-
 import { bgBlur } from '../../theme/css';
-
 import Logo from '../logo';
-import SvgColor from '../svg-color';
 import { useSettingsContext } from '../settings';
 
 import { NAV, HEADER } from '../layout/config-layout';
@@ -20,9 +15,10 @@ import AccountPopover from '../common/account-popover';
 import ContactsPopover from '../common/contacts-popover';
 import LanguagePopover from '../common/language-popover';
 import NotificationsPopover from '../common/notifications-popover';
-import { useOffSetTop } from '../../components/hooks/use-off-set-top';
-import { useResponsive } from '../../components/hooks/use-responsive';
+import { useOffSetTop } from '../hooks/use-off-set-top';
+import { useResponsive } from '../hooks/use-responsive';
 import Searchbar from '../common/searchbar';
+import { Box } from '@mui/system';
 
 // ----------------------------------------------------------------------
 
@@ -47,7 +43,7 @@ export default function Header({ onOpenNav }) {
 
       {!lgUp && (
         <IconButton onClick={onOpenNav}>
-          <SvgColor src="/assets/icons/navbar/ic_menu_item.svg"  />
+          <Box src="/assets/icons/navbar/ic_menu_item.svg"  />
         </IconButton>
       )}
 
@@ -79,7 +75,7 @@ export default function Header({ onOpenNav }) {
         height: HEADER.H_MOBILE,
         zIndex: theme.zIndex.appBar + 1,
         ...bgBlur({
-          color: theme.palette.background.default,
+          color: "#FFFFFF",
         }),
         transition: theme.transitions.create(['height'], {
           duration: theme.transitions.duration.shorter,
@@ -94,7 +90,7 @@ export default function Header({ onOpenNav }) {
             width: 1,
             bgcolor: 'background.default',
             height: HEADER.H_DESKTOP_OFFSET,
-            borderBottom: `dashed 1px ${theme.palette.divider}`,
+            borderBottom: `dashed 1px ${"rgba(145, 158, 171, 0.2)"}`,
           }),
           ...(isNavMini && {
             width: `calc(100% - ${NAV.W_MINI + 1}px)`,
@@ -113,4 +109,3 @@ export default function Header({ onOpenNav }) {
     </AppBar>
   );
 }
-

@@ -1,6 +1,7 @@
 import React from 'react';
 import SvgIcon from '@mui/material/SvgIcon';
-import Iconify from '../../components/iconify';
+import { Box } from '@mui/system';
+import { Icon } from '@iconify/react';
 
 
 // ----------------------------------------------------------------------
@@ -72,12 +73,13 @@ export function defaultProps(theme) {
     MuiAlert: {
       defaultProps: {
         iconMapping: {
-          error: <Iconify icon="solar:danger-bold" width={24} />,
-          info: <Iconify icon="eva:info-fill" width={24} />,
-          success: <Iconify icon="eva:checkmark-circle-2-fill" width={24} />,
-          warning: <Iconify icon="eva:alert-triangle-fill" width={24} />,
+          error: <Box component={Icon} className="component-iconify" icon={"solar:danger-bold"} sx={{ width:24, height: 24 }}/>,
+          info: <Box component={Icon} className="component-iconify" icon={"eva:info-fill"} sx={{ width:24, height: 24 }}/>,
+          success: <Box component={Icon} className="component-iconify" icon={"eva:checkmark-circle-2-fill"} sx={{ width:24, height: 24 }}/>,
+          warning: <Box component={Icon} className="component-iconify" icon={"eva:alert-triangle-fill"} sx={{ width:24, height: 24 }}/>,
         },
       },
+      
     },
     MuiStack: {
       defaultProps: {
@@ -116,7 +118,7 @@ export function defaultProps(theme) {
     },
     MuiChip: {
       defaultProps: {
-        deleteIcon: <Iconify icon="solar:close-circle-bold" />,
+        deleteIcon:  <Box component={Icon} className="component-iconify" icon={"solar:close-circle-bold"}/>
       },
     },
     MuiDialogActions: {
@@ -239,58 +241,113 @@ export function defaultProps(theme) {
     MuiDataGrid: {
       defaultProps: {
         slots: {
-          // column
           columnSortedAscendingIcon: () => (
-            <Iconify
-              width={20}
-              icon="solar:alt-arrow-up-bold-duotone"
-              sx={{ color: 'text.primary' }}
-            />
+            <Box component={Icon} className="component-iconify" icon={"solar:alt-arrow-up-bold-duotone"} sx={{ color: 'text.primary', width:20 }}/>
           ),
           columnSortedDescendingIcon: () => (
-            <Iconify
-              width={20}
-              icon="solar:alt-arrow-down-bold-duotone"
-              sx={{ color: 'text.primary' }}
+            <Box
+            component={Icon} 
+            className="component-iconify"
+              icon={"solar:alt-arrow-down-bold-duotone"}
+              sx={{ color: 'text.primary', width:20 }}
             />
           ),
           columnUnsortedIcon: () => (
-            <Iconify
-              width={20}
-              icon="solar:alt-arrow-up-bold-duotone"
-              sx={{ color: 'text.disabled' }}
+            <Box
+            component={Icon} 
+            className="component-iconify"
+              icon={"solar:alt-arrow-up-bold-duotone"}
+              sx={{ color: 'text.disabled', width:20 }}
             />
           ),
-          columnMenuIcon: () => <Iconify width={20} icon="mingcute:more-1-fill" />,
+          columnMenuIcon: () =>   <Box
+          component={Icon}
+          className="component-iconify"
+          sx={{ width: 20, height: 20, }}
+          icon={"mingcute:more-1-fill"} />,
           columnMenuSortAscendingIcon: () => (
-            <Iconify width={20} icon="solar:alt-arrow-up-bold-duotone" />
+              <Box
+          component={Icon}
+          className="component-iconify"
+          sx={{ width: 20, height: 20, }}
+          icon={"solar:alt-arrow-up-bold-duotone" }/>
           ),
           columnMenuSortDescendingIcon: () => (
-            <Iconify width={20} icon="solar:alt-arrow-down-bold-duotone" />
+              <Box
+          component={Icon}
+          className="component-iconify"
+          sx={{ width: 20, height: 20, }}
+          icon={"solar:alt-arrow-down-bold-duotone"} />
           ),
-          columnMenuFilterIcon: () => <Iconify width={20} icon="solar:filter-bold" />,
-          columnMenuHideIcon: () => <Iconify width={20} icon="solar:eye-closed-bold" />,
-          columnMenuManageColumnsIcon: () => <Iconify width={20} icon="solar:eye-bold" />,
-          columnSelectorIcon: () => <Iconify width={20} icon="solar:eye-bold" />,
+          columnMenuFilterIcon: () =>   <Box
+          component={Icon}
+          className="component-iconify"
+          sx={{ width: 20, height: 20, }}
+          icon={"solar:filter-bold"} />,
+          columnMenuHideIcon: () =>   <Box
+          component={Icon}
+          className="component-iconify"
+          sx={{ width: 20, height: 20, }}
+          icon={"solar:eye-closed-bold"} />,
+          columnMenuManageColumnsIcon: () =>   <Box
+          component={Icon}
+          className="component-iconify"
+          sx={{ width: 20, height: 20, }}
+          icon={"solar:eye-bold"} />,
+          columnSelectorIcon: () =>   <Box
+          component={Icon}
+          className="component-iconify"
+          sx={{ width: 20, height: 20, }}
+          icon={"solar:eye-bold"} />,
           // filter
-          filterPanelDeleteIcon: () => <Iconify width={20} icon="eva:close-fill" />,
-          openFilterButtonIcon: () => <Iconify width={20} icon="solar:filter-bold" />,
+          filterPanelDeleteIcon: () =>   <Box
+          component={Icon}
+          className="component-iconify"
+          sx={{ width: 20, height: 20, }}
+          icon={"eva:close-fill" }/>,
+          openFilterButtonIcon: () =>   <Box
+          component={Icon}
+          className="component-iconify"
+          sx={{ width: 20, height: 20, }}
+          icon={"solar:filter-bold"} />,
           columnFilteredIcon: () => (
-            <Iconify width={16} icon="solar:filter-bold" sx={{ color: 'text.primary' }} />
+            <Box icon={"solar:filter-bold"} component={Icon} 
+            className="component-iconify" sx={{ color: 'text.primary', width:16 }} />
           ),
           // density
           densityCompactIcon: () => (
-            <Iconify width={20} icon="material-symbols:table-rows-narrow-rounded" />
+              <Box
+          component={Icon}
+          className="component-iconify"
+          sx={{ width: 20, height: 20, }}
+          icon={"material-symbols:table-rows-narrow-rounded"} />
           ),
-          densityStandardIcon: () => <Iconify width={20} icon="mingcute:rows-4-fill" />,
-          densityComfortableIcon: () => <Iconify width={20} icon="mingcute:rows-2-fill" />,
+          densityStandardIcon: () =>   <Box
+          component={Icon}
+          className="component-iconify"
+          sx={{ width: 20, height: 20, }}
+          icon={"mingcute:rows-4-fill" }/>,
+          densityComfortableIcon: () =>   <Box
+          component={Icon}
+          className="component-iconify"
+          sx={{ width: 20, height: 20, }}
+          icon={"mingcute:rows-2-fill"} />,
           // export
-          exportIcon: () => <Iconify width={20} icon="solar:export-bold" />,
+          exportIcon: () =>   <Box
+          component={Icon}
+          className="component-iconify"
+          sx={{ width: 20, height: 20, }}
+          icon={"solar:export-bold" }/>,
           // quick filter
           quickFilterIcon: () => (
-            <Iconify width={24} icon="eva:search-fill" sx={{ color: 'text.secondary' }} />
+            <Box component={Icon} 
+            className="component-iconify" icon={"eva:search-fill"} sx={{ color: 'text.secondary',width:24 }} />
           ),
-          quickFilterClearIcon: () => <Iconify width={20} icon="eva:close-fill" />,
+          quickFilterClearIcon: () =>   <Box
+          component={Icon}
+          className="component-iconify"
+          sx={{ width: 20, height: 20, }}
+          icon={"eva:close-fill" }/>,
         },
         slotProps: {
           basePopper: {

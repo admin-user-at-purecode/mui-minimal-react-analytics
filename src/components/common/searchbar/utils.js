@@ -1,6 +1,5 @@
 import { flattenArray } from '../../utils/flatten-array';
 
-// ----------------------------------------------------------------------
 
 export function getAllItems({ data }) {
   const reduceItems = data.map((list) => handleLoop(list.items, list.subheader)).flat();
@@ -18,7 +17,6 @@ export function getAllItems({ data }) {
   return items;
 }
 
-// ----------------------------------------------------------------------
 
 export function applyFilter({ inputData, query }) {
   if (query) {
@@ -32,7 +30,6 @@ export function applyFilter({ inputData, query }) {
   return inputData;
 }
 
-// ----------------------------------------------------------------------
 
 export function splitPath(array, key) {
   let stack = array.map((item) => ({
@@ -59,7 +56,6 @@ export function splitPath(array, key) {
   return null;
 }
 
-// ----------------------------------------------------------------------
 
 export function handleLoop(array, subheader) {
   return array?.map((list) => ({
@@ -71,7 +67,6 @@ export function handleLoop(array, subheader) {
   }));
 }
 
-// ----------------------------------------------------------------------
 
 export function groupedData(array) {
   const group = array.reduce((groups, item) => {
