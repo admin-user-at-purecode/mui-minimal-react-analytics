@@ -13,12 +13,12 @@
         "Header",
         "Sidebar",
         "title",
-        "AnalyticsWidgetSummary",
-        "AnalyticsCurrentVisits",
-        "AnalyticsConversionRates",
-        "AnalyticsCurrentSubject",
-        "AnalyticsNews",
         "AnalyticsWebsiteVisits",
+        "AnalyticsCurrentVisits",
+        "AnalyticsNews",
+        "AnalyticsCurrentSubject",
+        "AnalyticsWidgetSummary", 
+        "AnalyticsConversionRates", 
         "AnalyticsOrderTimeline",
         "AnalyticsTasks",
         "AnalyticsTrafficBySite"
@@ -44,48 +44,48 @@
             "description": "simple text"
          
         },
+        "AnalyticsWebsiteVisits":
+        {
+          "count": 1,
+          "location": " its placed top left side of the ui layout",
+          "description":"this is a AnalyticsWebsiteVisits representing a graph "
+        },
+        "AnalyticsCurrentVisits": 
+        {
+            "count": 1,
+            "location": " its placed top  right side content taking 30% of full width ",
+            "description": "Pie chart"
+        },
+        "AnalyticsNews": 
+        {
+            "count": 1,
+            "location": "mid left 1st part  of main content taking 70% of full width ",
+            "description": "Card with button and list"
+        },
+        
+        "AnalyticsCurrentSubject": 
+        {
+            "count": 1,
+            "location": "mid right 1st part of main content taking 30% of full width ",
+            "description": "analytics chart"
+        },
         "AnalyticsWidgetSummary": 
         {
             "count": 4,
-            "location": "top after title of the main contet",
+            "location": "center  the main contet",
             "description": "count for Weekly Sales, New Users, Item Orders, Bug Reports"
          
         },
         "AnalyticsConversionRates": 
         {
             "count": 1,
-            "location": "mid left of main content taking 70% of full width ",
+            "location": "mid  2nd left of main content taking 70% of full width ",
             "description": "horizontal graph for conversion rates"
-        },
-        "AnalyticsCurrentVisits": 
-        {
-            "count": 1,
-            "location": "mid right of main content taking 30% of full width ",
-            "description": "Pie chart"
-        },
-        "AnalyticsNews": 
-        {
-            "count": 1,
-            "location": "mid left 2nd part  of main content taking 70% of full width ",
-            "description": "Card with button and list"
-        },
-        "AnalyticsCurrentSubject": 
-        {
-            "count": 1,
-            "location": "mid right 2nd part of main content taking 30% of full width ",
-            "description": "analytics chart"
-        },
-
-        "AnalyticsWebsiteVisits":
-        {
-          "count": 1,
-          "location": "its placed below a AnalyticsNews and its placed left side of the ui layout",
-          "description":"this is a AnalyticsWebsiteVisits representing a graph "
-        },
+        }, 
         "AnalyticsOrderTimeline":
         {
           "count": 1,
-          "location": "its placed below a AnalyticsCurrentSubject and its placed right side of the ui layout",
+          "location": "its placed mid 2nd right side of the ui layout",
           "description":"this is a card format and its shows Order Timeline "
         },
         "AnalyticsTasks":{
