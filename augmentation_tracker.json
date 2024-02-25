@@ -14,14 +14,15 @@
         "Sidebar",
         "title",
         "AnalyticsWidgetSummary",
-        "AnalyticsCurrentVisits",
         "AnalyticsConversionRates",
-        "AnalyticsCurrentSubject",
+        "AnalyticsCurrentVisits",
         "AnalyticsNews",
-        "AnalyticsWebsiteVisits",
-        "AnalyticsOrderTimeline",
+        "AnalyticsCurrentSubject",
         "AnalyticsTasks",
-        "AnalyticsTrafficBySite"
+        "AnalyticsTrafficBySite",
+        "AnalyticsWebsiteVisits",
+        "AnalyticsOrderTimeline"
+       
     ],
     "component_information":    
     {
@@ -66,32 +67,31 @@
         "AnalyticsNews": 
         {
             "count": 1,
-            "location": "mid left 2nd part  of main content taking 70% of full width ",
+            "location": "mid left 1st part  of main content taking 70% of full width ",
             "description": "Card with button and list"
         },
         "AnalyticsCurrentSubject": 
         {
             "count": 1,
-            "location": "mid right 2nd part of main content taking 30% of full width ",
+            "location": "mid right 1st part of main content taking 30% of full width ",
             "description": "analytics chart"
         },
-
-        "AnalyticsWebsiteVisits":
-        {
-          "count": 1,
-          "location": "its placed below a AnalyticsNews and its placed left side of the ui layout",
-          "description":"this is a AnalyticsWebsiteVisits representing a graph "
+        "AnalyticsTasks":{
+            "count": 1,
+            "location": "this section its placed in a mid 2nd  left side",
+            "description": "this card its representing a table inside the table their are a checkbox content its occuiped 70% of the width"
         },
         "AnalyticsOrderTimeline":
         {
           "count": 1,
-          "location": "its placed below a AnalyticsCurrentSubject and its placed right side of the ui layout",
+          "location": " its placed  mid 2nd right side of the ui layout",
           "description":"this is a card format and its shows Order Timeline "
         },
-        "AnalyticsTasks":{
-            "count": 1,
-            "location": "this section its placed in a bottom  left side",
-            "description": "this card its representing a table inside the table their are a checkbox content its occuiped 70% of the width"
+        "AnalyticsWebsiteVisits":
+        {
+          "count": 1,
+          "location": " its placed bottom left side of the ui layout",
+          "description":"this is a AnalyticsWebsiteVisits representing a graph "
         },
         "AnalyticsTrafficBySite":{
             "count": 1,
