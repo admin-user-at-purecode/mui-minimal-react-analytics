@@ -14,12 +14,12 @@
         "Sidebar",
         "title",
         "AnalyticsWidgetSummary",
-        "AnalyticsCurrentVisits",
-        "AnalyticsConversionRates",
-        "AnalyticsCurrentSubject",
         "AnalyticsNews",
+        "AnalyticsCurrentSubject",
         "AnalyticsWebsiteVisits",
         "AnalyticsOrderTimeline",
+       "AnalyticsConversionRates",
+        "AnalyticsCurrentVisits",
         "AnalyticsTasks",
         "AnalyticsTrafficBySite"
     ],
@@ -51,6 +51,32 @@
             "description": "count for Weekly Sales, New Users, Item Orders, Bug Reports"
          
         },
+
+        "AnalyticsNews": 
+        {
+            "count": 1,
+            "location": "mid left 1st part  of main content taking 70% of full width ",
+            "description": "Card with button and list"
+        },
+        "AnalyticsCurrentSubject": 
+        {
+            "count": 1,
+            "location": "mid right 1st part of main content taking 30% of full width ",
+            "description": "analytics chart"
+        },
+
+        "AnalyticsWebsiteVisits":
+        {
+          "count": 1,
+          "location": "its placed mid of the  2nd left side of the ui layout",
+          "description":"this is a AnalyticsWebsiteVisits representing a graph "
+        },
+        "AnalyticsOrderTimeline":
+        {
+          "count": 1,
+          "location":" its placed  mid of the 2nd right side of the ui layout",
+          "description":"this is a card format and its shows Order Timeline "
+        },
         "AnalyticsConversionRates": 
         {
             "count": 1,
@@ -62,31 +88,6 @@
             "count": 1,
             "location": "mid right of main content taking 30% of full width ",
             "description": "Pie chart"
-        },
-        "AnalyticsNews": 
-        {
-            "count": 1,
-            "location": "mid left 2nd part  of main content taking 70% of full width ",
-            "description": "Card with button and list"
-        },
-        "AnalyticsCurrentSubject": 
-        {
-            "count": 1,
-            "location": "mid right 2nd part of main content taking 30% of full width ",
-            "description": "analytics chart"
-        },
-
-        "AnalyticsWebsiteVisits":
-        {
-          "count": 1,
-          "location": "its placed below a AnalyticsNews and its placed left side of the ui layout",
-          "description":"this is a AnalyticsWebsiteVisits representing a graph "
-        },
-        "AnalyticsOrderTimeline":
-        {
-          "count": 1,
-          "location": "its placed below a AnalyticsCurrentSubject and its placed right side of the ui layout",
-          "description":"this is a card format and its shows Order Timeline "
         },
         "AnalyticsTasks":{
             "count": 1,
