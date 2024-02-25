@@ -17,11 +17,18 @@
         "AnalyticsCurrentVisits",
         "AnalyticsConversionRates",
         "AnalyticsCurrentSubject",
+<<<<<<< Updated upstream
         "AnalyticsNews",
         "AnalyticsWebsiteVisits",
         "AnalyticsOrderTimeline",
         "AnalyticsTasks",
         "AnalyticsTrafficBySite"
+=======
+      "AnalyticsWebsiteVisits",
+      "AnalyticsTrafficBySite",
+      "AnalyticsTasks",
+     "AnalyticsOrderTimeline"
+>>>>>>> Stashed changes
     ],
     "component_information":    
     {
@@ -82,22 +89,24 @@
           "location": "its placed below a AnalyticsNews and its placed left side of the ui layout",
           "description":"this is a AnalyticsWebsiteVisits representing a graph "
         },
-        "AnalyticsOrderTimeline":
-        {
-          "count": 1,
-          "location": "its placed below a AnalyticsCurrentSubject and its placed right side of the ui layout",
-          "description":"this is a card format and its shows Order Timeline "
+        "AnalyticsTrafficBySite":{
+            "count": 1,
+            "location": "this section its placed in a mid right  side",
+            "description": "this card its  representing social icons and followers its occuiped 30% of the width"
         },
+      
         "AnalyticsTasks":{
             "count": 1,
             "location": "this section its placed in a bottom  left side",
             "description": "this card its representing a table inside the table their are a checkbox content its occuiped 70% of the width"
         },
-        "AnalyticsTrafficBySite":{
-            "count": 1,
-            "location": "this section its placed in a bottom right  side",
-            "description": "this card its  representing social icons and followers its occuiped 30% of the width"
+        "AnalyticsOrderTimeline":
+        {
+          "count": 1,
+          "location": "its placed bottom  right side of the ui layout",
+          "description":"this is a card format and its shows Order Timeline "
         },
+     
         "functionality":
         {
             "sidebar_toggle": "a toggle feature that allows the sidebar to be hidden or shown"
