@@ -13,12 +13,12 @@
         "Header",
         "Sidebar",
         "title",
-        "AnalyticsWidgetSummary",
-        "AnalyticsCurrentVisits",
         "AnalyticsConversionRates",
+        "AnalyticsCurrentVisits",
+        "AnalyticsWidgetSummary",
         "AnalyticsCurrentSubject",
-        "AnalyticsNews",
         "AnalyticsWebsiteVisits",
+        "AnalyticsNews",
         "AnalyticsOrderTimeline",
         "AnalyticsTasks",
         "AnalyticsTrafficBySite"
@@ -44,50 +44,53 @@
             "description": "simple text"
          
         },
-        "AnalyticsWidgetSummary": 
-        {
-            "count": 4,
-            "location": "top after title of the main contet",
-            "description": "count for Weekly Sales, New Users, Item Orders, Bug Reports"
-         
-        },
+      
         "AnalyticsConversionRates": 
         {
             "count": 1,
-            "location": "mid left of main content taking 70% of full width ",
+            "location": "top left of main content taking 70% of full width ",
             "description": "horizontal graph for conversion rates"
         },
         "AnalyticsCurrentVisits": 
         {
             "count": 1,
-            "location": "mid right of main content taking 30% of full width ",
+            "location": "top right of main content taking 30% of full width ",
             "description": "Pie chart"
         },
-        "AnalyticsNews": 
+        "AnalyticsWidgetSummary": 
         {
-            "count": 1,
-            "location": "mid left 2nd part  of main content taking 70% of full width ",
-            "description": "Card with button and list"
+            "count": 4,
+            "location": "mid after title of the main contet",
+            "description": "count for Weekly Sales, New Users, Item Orders, Bug Reports"
+         
         },
         "AnalyticsCurrentSubject": 
         {
             "count": 1,
-            "location": "mid right 2nd part of main content taking 30% of full width ",
+            "location": "mid left 2nd part of main content taking 30% of full width ",
             "description": "analytics chart"
         },
-
         "AnalyticsWebsiteVisits":
         {
           "count": 1,
-          "location": "its placed below a AnalyticsNews and its placed left side of the ui layout",
+          "location": "its placed mid right side  of the ui layout",
           "description":"this is a AnalyticsWebsiteVisits representing a graph "
+        },
+     
+
+        "AnalyticsNews": 
+        {
+            "count": 1,
+            "location": "mid left of the main content taking 70% of full width ",
+            "description": "Card with button and list"
         },
         "AnalyticsOrderTimeline":
         {
           "count": 1,
-          "location": "its placed below a AnalyticsCurrentSubject and its placed right side of the ui layout",
+          "location": " placed right side of the ui layout",
           "description":"this is a card format and its shows Order Timeline "
         },
+       
         "AnalyticsTasks":{
             "count": 1,
             "location": "this section its placed in a bottom  left side",
