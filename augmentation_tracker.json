@@ -36,9 +36,6 @@
             "count": 1,
             "location": "left of the page fixed",
             "description": "List of menu items with sub item "
-        
-           
-         
         },
         "title": 
         {
@@ -54,40 +51,38 @@
             "description": "count for Weekly Sales, New Users, Item Orders, Bug Reports"
          
         },
-        "AnalyticsCurrentVisits": 
-        {
-            "count": 1,
-            "location": "mid left of main content taking 30% of full width ",
-            "description": "Pie chart"
-        },
         "AnalyticsConversionRates": 
         {
             "count": 1,
-            "location": "mid right of main content taking 70% of full width ",
+            "location": "mid left of main content taking 70% of full width ",
             "description": "horizontal graph for conversion rates"
         },
-        "AnalyticsCurrentSubject": 
+        "AnalyticsCurrentVisits": 
         {
             "count": 1,
-            "location": "mid left 2nd part of main content taking 30% of full width ",
-            "description": "analytics chart"
+            "location": "mid right of main content taking 30% of full width ",
+            "description": "Pie chart"
         },
-
+        "AnalyticsNews": 
+        {
+            "count": 1,
+            "location": "mid left 2nd part  of main content taking 70% of full width ",
+            "description": "Card with button and list"
+        },
         "AnalyticsCurrentSubject": 
         {
             "count": 1,
-            "location": "mid right 2nd part of main content taking 70% of full width ",
-            "description": "this is a AnalyticsNews"
-            
+            "location": "mid right 2nd part of main content taking 30% of full width ",
+            "description": "analytics chart"
         },
 
         "AnalyticsWebsiteVisits":
         {
           "count": 1,
-          "location": "its placed below a AnalyticsCurrentSubject and its placed left side of the ui layout",
+          "location": "its placed below a AnalyticsNews and its placed left side of the ui layout",
           "description":"this is a AnalyticsWebsiteVisits representing a graph "
         },
-        "AnalyticsWebsiteVisits":
+        "AnalyticsOrderTimeline":
         {
           "count": 1,
           "location": "its placed below a AnalyticsCurrentSubject and its placed right side of the ui layout",
@@ -103,80 +98,9 @@
             "location": "this section its placed in a bottom right  side",
             "description": "this card its  representing social icons and followers its occuiped 30% of the width"
         },
-
-
-        "AnalyticsNews": 
+        "functionality":
         {
-            "count": 1,
-            "location": "mid right 2nd part  of main content taking 70% of full width ",
-            "description": "Card with button and list",
-            "children":
-            {
-                "child1": {
-                    "count": 1,
-                    "location": "top of the component3",
-                    "description": "a button"
-                },
-                "child2": {
-                    "count": 2,
-                    "location": "bottom of the component3",
-                    "description": "a table with 2 rows and 3 columns containing names, emails and phone numbers", 
-                    "children":
-                    {
-                        "child3": {
-                            "count": 1,
-                            "location": "right of the child2",
-                            "description": "a form"
-                        }
-                    }
-                }
-            },
-            "children_orientation_description": "child1 is a button, child2 is a table, child3 is a form  --  all arranged in a flex format"   //Optional  --  wherever necessary.
-        },
-        "AnalyticsCurrentVisits": 
-        {
-            "count": 1,
-            "location": "mid left of main content taking 30% of full width ",
-            "description": "Pie chart",
-            "children":
-            {
-                "child1": {
-                    "count": 1,
-                    "location": "top of the component3",
-                    "description": "a button"
-                },
-                "child2": {
-                    "count": 2,
-                    "location": "bottom of the component3",
-                    "description": "a table with 2 rows and 3 columns containing names, emails and phone numbers", 
-                    "children":
-                    {
-                        "child3": {
-                            "count": 1,
-                            "location": "right of the child2",
-                            "description": "a form"
-                        }
-                    }
-                }
-            },
-            "children_orientation_description": "child1 is a button, child2 is a table, child3 is a form  --  all arranged in a flex format"   //Optional  --  wherever necessary.
+            "sidebar_toggle": "a toggle feature that allows the sidebar to be hidden or shown"
         }
-    },
-    "functionality":
-    {
-        "sidebar_toggle": "a toggle feature that allows the sidebar to be hidden or shown",
-        "table_pagination": "a feature that allows the table to be paginated",
-        "image_carousel": "a feature that allows the images to be displayed in a carousel",
-        "table_filtering": "a feature that allows the table to be filtered"
-    },
-    "sizing_updates":  
-    [
-        "Stretched the Revenue Flow to the entire center column"
-    ],
-    "screen_and_layout_augmentations":    
-    [
-        "swapped position of revenue flow with efficiency card",
-        "dropped the My Wallet component to be below contacts table"
-    ]
-
+    }
 }
