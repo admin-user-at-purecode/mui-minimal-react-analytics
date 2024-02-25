@@ -84,6 +84,20 @@ export default function OverviewAnalyticsView() {
         </Grid>
 
 
+        <Grid xs={12} md={6} lg={4}>
+          <AnalyticsCurrentVisits
+            title="Current Visits"
+            chart={{
+              series: [
+                { label: "America", value: 4344 },
+                { label: "Asia", value: 5435 },
+                { label: "Europe", value: 1443 },
+                { label: "Africa", value: 4443 },
+              ],
+            }}
+          />
+        </Grid>
+        
         <Grid xs={12} md={6} lg={8}>
           <AnalyticsConversionRates
             title="Conversion Rates"
@@ -100,19 +114,6 @@ export default function OverviewAnalyticsView() {
                 { label: "Netherlands", value: 1100 },
                 { label: "United States", value: 1200 },
                 { label: "United Kingdom", value: 1380 },
-              ],
-            }}
-          />
-        </Grid>
-        <Grid xs={12} md={6} lg={4}>
-          <AnalyticsCurrentVisits
-            title="Current Visits"
-            chart={{
-              series: [
-                { label: "America", value: 4344 },
-                { label: "Asia", value: 5435 },
-                { label: "Europe", value: 1443 },
-                { label: "Africa", value: 4443 },
               ],
             }}
           />
