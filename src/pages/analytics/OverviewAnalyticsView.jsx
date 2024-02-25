@@ -44,6 +44,15 @@ export default function OverviewAnalyticsView() {
       </Typography>
 
       <Grid container spacing={3}>
+      <Grid xs={12} md={6} lg={8}>
+          <AnalyticsTasks title="Tasks" list={_analyticTasks} />
+        </Grid>
+        <Grid xs={12} md={6} lg={4}>
+          <AnalyticsTrafficBySite
+            title="Traffic by Site"
+            list={_analyticTraffic}
+          />
+        </Grid>
         <Grid xs={12} sm={6} md={3}>
           <AnalyticsWidgetSummary
             title="Weekly Sales"
@@ -191,15 +200,7 @@ export default function OverviewAnalyticsView() {
           />
         </Grid>
 
-        <Grid xs={12} md={6} lg={8}>
-          <AnalyticsTasks title="Tasks" list={_analyticTasks} />
-        </Grid>
-        <Grid xs={12} md={6} lg={4}>
-          <AnalyticsTrafficBySite
-            title="Traffic by Site"
-            list={_analyticTraffic}
-          />
-        </Grid>
+     
       </Grid>
     </Container>
   );
