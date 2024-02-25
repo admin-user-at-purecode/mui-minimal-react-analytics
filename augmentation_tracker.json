@@ -13,12 +13,12 @@
         "Header",
         "Sidebar",
         "title",
-        "AnalyticsWidgetSummary",
-        "AnalyticsCurrentVisits",
         "AnalyticsConversionRates",
+        "AnalyticsCurrentVisits",
+        "AnalyticsWidgetSummary",
+        "AnalyticsWebsiteVisits",
         "AnalyticsCurrentSubject",
         "AnalyticsNews",
-        "AnalyticsWebsiteVisits",
         "AnalyticsOrderTimeline",
         "AnalyticsTasks",
         "AnalyticsTrafficBySite"
@@ -69,19 +69,20 @@
             "location": "mid left 2nd part  of main content taking 70% of full width ",
             "description": "Card with button and list"
         },
-        "AnalyticsCurrentSubject": 
-        {
-            "count": 1,
-            "location": "mid right 2nd part of main content taking 30% of full width ",
-            "description": "analytics chart"
-        },
-
         "AnalyticsWebsiteVisits":
         {
           "count": 1,
-          "location": "its placed below a AnalyticsNews and its placed left side of the ui layout",
+          "location": "its placed below a AnalyticsNews and its placed right side of the ui layout",
           "description":"this is a AnalyticsWebsiteVisits representing a graph "
         },
+        "AnalyticsCurrentSubject": 
+        {
+            "count": 1,
+            "location": "mid  left 2nd part of main content taking 30% of full width ",
+            "description": "analytics chart"
+        },
+
+       
         "AnalyticsOrderTimeline":
         {
           "count": 1,
