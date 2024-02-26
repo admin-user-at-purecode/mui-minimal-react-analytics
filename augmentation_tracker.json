@@ -14,8 +14,7 @@
         "Sidebar",
         "title",
         "AnalyticsWidgetSummary",
-        "AnalyticsCurrentVisits",
-        "AnalyticsConversionRates",
+       
         "AnalyticsCurrentSubject",
         "AnalyticsNews",
         "AnalyticsWebsiteVisits",
@@ -51,18 +50,7 @@
             "description": "count for Weekly Sales, New Users, Item Orders, Bug Reports"
          
         },
-        "AnalyticsConversionRates": 
-        {
-            "count": 1,
-            "location": "mid left of main content taking 70% of full width ",
-            "description": "horizontal graph for conversion rates"
-        },
-        "AnalyticsCurrentVisits": 
-        {
-            "count": 1,
-            "location": "mid right of main content taking 30% of full width ",
-            "description": "Pie chart"
-        },
+      
         "AnalyticsNews": 
         {
             "count": 1,
@@ -79,13 +67,13 @@
         "AnalyticsWebsiteVisits":
         {
           "count": 1,
-          "location": "its placed below a AnalyticsNews and its placed left side of the ui layout",
+          "location": "its placed left side of the ui layout",
           "description":"this is a AnalyticsWebsiteVisits representing a graph "
         },
         "AnalyticsOrderTimeline":
         {
           "count": 1,
-          "location": "its placed below a AnalyticsCurrentSubject and its placed right side of the ui layout",
+          "location": "its placed right side of the ui layout",
           "description":"this is a card format and its shows Order Timeline "
         },
         "AnalyticsTasks":{
