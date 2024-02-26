@@ -44,45 +44,7 @@ export default function OverviewAnalyticsView() {
       </Typography>
 
       <Grid container spacing={3}>
-        <Grid xs={12} sm={6} md={3}>
-          <AnalyticsWidgetSummary
-            title="Weekly Sales"
-            total={714000}
-            icon={<img alt="icon" src="/assets/icons/glass/ic_glass_bag.png" />}
-          />
-        </Grid>
-
-        <Grid xs={12} sm={6} md={3}>
-          <AnalyticsWidgetSummary
-            title="New Users"
-            total={1352831}
-            color="info"
-            icon={
-              <img alt="icon" src="/assets/icons/glass/ic_glass_users.png" />
-            }
-          />
-        </Grid>
-
-        <Grid xs={12} sm={6} md={3}>
-          <AnalyticsWidgetSummary
-            title="Item Orders"
-            total={1723315}
-            color="warning"
-            icon={<img alt="icon" src="/assets/icons/glass/ic_glass_buy.png" />}
-          />
-        </Grid>
-
-        <Grid xs={12} sm={6} md={3}>
-          <AnalyticsWidgetSummary
-            title="Bug Reports"
-            total={234}
-            color="error"
-            icon={
-              <img alt="icon" src="/assets/icons/glass/ic_glass_message.png" />
-            }
-          />
-        </Grid>
-
+        
 
         <Grid xs={12} md={6} lg={8}>
           <AnalyticsConversionRates
@@ -119,30 +81,7 @@ export default function OverviewAnalyticsView() {
         </Grid>
 
        
-        <Grid xs={12} md={6} lg={8}>
-          <AnalyticsNews title="News" list={_analyticPosts} />
-        </Grid>
-        <Grid xs={12} md={6} lg={4}>
-          <AnalyticsCurrentSubject
-            title="Current Subject"
-            chart={{
-              categories: [
-                "English",
-                "History",
-                "Physics",
-                "Geography",
-                "Chinese",
-                "Math",
-              ],
-              series: [
-                { name: "Series 1", data: [80, 50, 30, 40, 100, 20] },
-                { name: "Series 2", data: [20, 30, 40, 80, 20, 80] },
-                { name: "Series 3", data: [44, 76, 78, 13, 43, 10] },
-              ],
-            }}
-          />
-        </Grid>
-
+       
         <Grid xs={12} md={6} lg={8}>
           <AnalyticsWebsiteVisits
             title="Website Visits"
