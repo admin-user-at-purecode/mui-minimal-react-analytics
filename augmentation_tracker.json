@@ -44,48 +44,29 @@
             "description": "simple text"
          
         },
-        "AnalyticsWidgetSummary": 
-        {
-            "count": 4,
-            "location": "top after title of the main contet",
-            "description": "count for Weekly Sales, New Users, Item Orders, Bug Reports"
-         
-        },
-        "AnalyticsConversionRates": 
+      "AnalyticsNews": 
         {
             "count": 1,
-            "location": "mid left of main content taking 70% of full width ",
-            "description": "horizontal graph for conversion rates"
-        },
-        "AnalyticsCurrentVisits": 
-        {
-            "count": 1,
-            "location": "mid right of main content taking 30% of full width ",
-            "description": "Pie chart"
-        },
-        "AnalyticsNews": 
-        {
-            "count": 1,
-            "location": "mid left 2nd part  of main content taking 70% of full width ",
+            "location": " top left of main content taking 70% of full width ",
             "description": "Card with button and list"
         },
         "AnalyticsCurrentSubject": 
         {
             "count": 1,
-            "location": "mid right 2nd part of main content taking 30% of full width ",
+            "location": "top right  of main content taking 30% of full width ",
             "description": "analytics chart"
         },
 
         "AnalyticsWebsiteVisits":
         {
           "count": 1,
-          "location": "its placed below a AnalyticsNews and its placed left side of the ui layout",
+          "location": " its placed left side of the ui layout",
           "description":"this is a AnalyticsWebsiteVisits representing a graph "
         },
         "AnalyticsOrderTimeline":
         {
           "count": 1,
-          "location": "its placed below a AnalyticsCurrentSubject and its placed right side of the ui layout",
+          "location":"its placed right side of the ui layout",
           "description":"this is a card format and its shows Order Timeline "
         },
         "AnalyticsTasks":{
@@ -97,10 +78,12 @@
             "count": 1,
             "location": "this section its placed in a bottom right  side",
             "description": "this card its  representing social icons and followers its occuiped 30% of the width"
-        },
-        "functionality":
-        {
-            "sidebar_toggle": "a toggle feature that allows the sidebar to be hidden or shown"
         }
+        
+    },
+    "functionality":
+    {
+        "sidebar_toggle": "a toggle feature that allows the sidebar to be hidden or shown",
+        "drawer":" A toggleable feature enabling hiding or showing of the ."
     }
 }
