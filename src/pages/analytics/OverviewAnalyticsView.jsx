@@ -44,6 +44,45 @@ export default function OverviewAnalyticsView() {
       </Typography>
 
       <Grid container spacing={3}>
+        
+
+
+        <Grid xs={12} md={6} lg={8}>
+          <AnalyticsConversionRates
+            title="Conversion Rates"
+            subheader="(+43%) than last year"
+            chart={{
+              series: [
+                { label: "Italy", value: 400 },
+                { label: "Japan", value: 430 },
+                { label: "China", value: 448 },
+                { label: "Canada", value: 470 },
+                { label: "France", value: 540 },
+                { label: "Germany", value: 580 },
+                { label: "South Korea", value: 690 },
+                { label: "Netherlands", value: 1100 },
+                { label: "United States", value: 1200 },
+                { label: "United Kingdom", value: 1380 },
+              ],
+            }}
+          />
+        </Grid>
+        <Grid xs={12} md={6} lg={4}>
+          <AnalyticsCurrentVisits
+            title="Current Visits"
+            chart={{
+              series: [
+                { label: "America", value: 4344 },
+                { label: "Asia", value: 5435 },
+                { label: "Europe", value: 1443 },
+                { label: "Africa", value: 4443 },
+              ],
+            }}
+          />
+        </Grid>
+
+       
+       
         <Grid xs={12} sm={6} md={3}>
           <AnalyticsWidgetSummary
             title="Weekly Sales"
@@ -82,67 +121,6 @@ export default function OverviewAnalyticsView() {
             }
           />
         </Grid>
-
-
-        <Grid xs={12} md={6} lg={8}>
-          <AnalyticsConversionRates
-            title="Conversion Rates"
-            subheader="(+43%) than last year"
-            chart={{
-              series: [
-                { label: "Italy", value: 400 },
-                { label: "Japan", value: 430 },
-                { label: "China", value: 448 },
-                { label: "Canada", value: 470 },
-                { label: "France", value: 540 },
-                { label: "Germany", value: 580 },
-                { label: "South Korea", value: 690 },
-                { label: "Netherlands", value: 1100 },
-                { label: "United States", value: 1200 },
-                { label: "United Kingdom", value: 1380 },
-              ],
-            }}
-          />
-        </Grid>
-        <Grid xs={12} md={6} lg={4}>
-          <AnalyticsCurrentVisits
-            title="Current Visits"
-            chart={{
-              series: [
-                { label: "America", value: 4344 },
-                { label: "Asia", value: 5435 },
-                { label: "Europe", value: 1443 },
-                { label: "Africa", value: 4443 },
-              ],
-            }}
-          />
-        </Grid>
-
-       
-        <Grid xs={12} md={6} lg={8}>
-          <AnalyticsNews title="News" list={_analyticPosts} />
-        </Grid>
-        <Grid xs={12} md={6} lg={4}>
-          <AnalyticsCurrentSubject
-            title="Current Subject"
-            chart={{
-              categories: [
-                "English",
-                "History",
-                "Physics",
-                "Geography",
-                "Chinese",
-                "Math",
-              ],
-              series: [
-                { name: "Series 1", data: [80, 50, 30, 40, 100, 20] },
-                { name: "Series 2", data: [20, 30, 40, 80, 20, 80] },
-                { name: "Series 3", data: [44, 76, 78, 13, 43, 10] },
-              ],
-            }}
-          />
-        </Grid>
-
         <Grid xs={12} md={6} lg={8}>
           <AnalyticsWebsiteVisits
             title="Website Visits"
@@ -190,9 +168,28 @@ export default function OverviewAnalyticsView() {
             list={_analyticOrderTimeline}
           />
         </Grid>
-
         <Grid xs={12} md={6} lg={8}>
-          <AnalyticsTasks title="Tasks" list={_analyticTasks} />
+          <AnalyticsNews title="News" list={_analyticPosts} />
+        </Grid>
+        <Grid xs={12} md={6} lg={4}>
+          <AnalyticsCurrentSubject
+            title="Current Subject"
+            chart={{
+              categories: [
+                "English",
+                "History",
+                "Physics",
+                "Geography",
+                "Chinese",
+                "Math",
+              ],
+              series: [
+                { name: "Series 1", data: [80, 50, 30, 40, 100, 20] },
+                { name: "Series 2", data: [20, 30, 40, 80, 20, 80] },
+                { name: "Series 3", data: [44, 76, 78, 13, 43, 10] },
+              ],
+            }}
+          />
         </Grid>
         <Grid xs={12} md={6} lg={4}>
           <AnalyticsTrafficBySite
@@ -200,6 +197,11 @@ export default function OverviewAnalyticsView() {
             list={_analyticTraffic}
           />
         </Grid>
+
+        <Grid xs={12} md={6} lg={8}>
+          <AnalyticsTasks title="Tasks" list={_analyticTasks} />
+        </Grid>
+       
       </Grid>
     </Container>
   );
