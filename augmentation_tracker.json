@@ -14,10 +14,11 @@
         "Sidebar",
         "title",
         "AnalyticsWidgetSummary",
-        "AnalyticsCurrentVisits",
+        "AnalyticsWidgetSummary",
         "AnalyticsConversionRates",
-        "AnalyticsCurrentSubject",
+        "AnalyticsCurrentVisits",
         "AnalyticsNews",
+        "AnalyticsCurrentSubject",
         "AnalyticsWebsiteVisits",
         "AnalyticsOrderTimeline",
         "AnalyticsTasks",
@@ -48,6 +49,13 @@
         {
             "count": 4,
             "location": "top after title of the main contet",
+            "description": "count for Weekly Sales, New Users, Item Orders, Bug Reports"
+         
+        },
+        "AnalyticsWidgetSummary": 
+        {
+            "count": 4,
+            "location": "second after title of the main contet",
             "description": "count for Weekly Sales, New Users, Item Orders, Bug Reports"
          
         },
