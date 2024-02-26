@@ -14,13 +14,13 @@
         "Sidebar",
         "title",
         "AnalyticsWidgetSummary",
-        "AnalyticsCurrentVisits",
         "AnalyticsConversionRates",
-        "AnalyticsCurrentSubject",
+        "AnalyticsCurrentVisits",
         "AnalyticsNews",
-        "AnalyticsWebsiteVisits",
+        "AnalyticsCurrentSubject",
+         "AnalyticsTasks",
         "AnalyticsOrderTimeline",
-        "AnalyticsTasks",
+       "AnalyticsWebsiteVisits",
         "AnalyticsTrafficBySite"
     ],
     "component_information":    
@@ -75,23 +75,24 @@
             "location": "mid right 2nd part of main content taking 30% of full width ",
             "description": "analytics chart"
         },
-
-        "AnalyticsWebsiteVisits":
-        {
-          "count": 1,
-          "location": "its placed below a AnalyticsNews and its placed left side of the ui layout",
-          "description":"this is a AnalyticsWebsiteVisits representing a graph "
+          "AnalyticsTasks":{
+            "count": 1,
+            "location":   "its placed below a AnalyticsNews and its placed left side of the ui layout",
+          "description": "this card its representing a table inside the table their are a checkbox content its occuiped 70% of the width"
         },
+
+       
         "AnalyticsOrderTimeline":
         {
           "count": 1,
           "location": "its placed below a AnalyticsCurrentSubject and its placed right side of the ui layout",
           "description":"this is a card format and its shows Order Timeline "
         },
-        "AnalyticsTasks":{
-            "count": 1,
-            "location": "this section its placed in a bottom  left side",
-            "description": "this card its representing a table inside the table their are a checkbox content its occuiped 70% of the width"
+        "AnalyticsWebsiteVisits":
+        {
+          "count": 1,
+          "location":  "this section its placed in a bottom  left side",
+          "description":"this is a AnalyticsWebsiteVisits representing a graph "
         },
         "AnalyticsTrafficBySite":{
             "count": 1,
