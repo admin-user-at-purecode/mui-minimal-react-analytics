@@ -21,6 +21,10 @@
         "AnalyticsWebsiteVisits",
         "AnalyticsOrderTimeline",
         "AnalyticsTasks",
+        "AnalyticsTrafficBySite",
+        "AnalyticsWebsiteVisits",
+        "AnalyticsOrderTimeline",
+        "AnalyticsTasks",
         "AnalyticsTrafficBySite"
     ],
     "component_information":    
@@ -54,13 +58,13 @@
         "AnalyticsConversionRates": 
         {
             "count": 1,
-            "location": "mid left of main content taking 70% of full width ",
+            "location": "mid  1st left of main content taking 70% of full width ",
             "description": "horizontal graph for conversion rates"
         },
         "AnalyticsCurrentVisits": 
         {
             "count": 1,
-            "location": "mid right of main content taking 30% of full width ",
+            "location": "mid 1st right of main content taking 30% of full width ",
             "description": "Pie chart"
         },
         "AnalyticsNews": 
@@ -79,13 +83,35 @@
         "AnalyticsWebsiteVisits":
         {
           "count": 1,
-          "location": "its placed below a AnalyticsNews and its placed left side of the ui layout",
+          "location": "its placed mid right 3rd left side of the ui layout",
           "description":"this is a AnalyticsWebsiteVisits representing a graph "
         },
         "AnalyticsOrderTimeline":
         {
           "count": 1,
-          "location": "its placed below a AnalyticsCurrentSubject and its placed right side of the ui layout",
+          "location": "its placed right  3rd side of the ui layout",
+          "description":"this is a card format and its shows Order Timeline "
+        },
+        "AnalyticsTasks":{
+            "count": 1,
+            "location": "this section its placed mid 4th  left side",
+            "description": "this card its representing a table inside the table their are a checkbox content its occuiped 70% of the width"
+        },
+        "AnalyticsTrafficBySite":{
+            "count": 1,
+            "location": "this section its placed mid 4th  rigth side",
+            "description": "this card its  representing social icons and followers its occuiped 30% of the width"
+        },
+        "AnalyticsWebsiteVisits":
+        {
+          "count": 1,
+          "location": "this section its placed mid 5th  left side",
+          "description":"this is a AnalyticsWebsiteVisits representing a graph "
+        },
+        "AnalyticsOrderTimeline":
+        {
+          "count": 1,
+          "location": " its placed right mid 5th side of the ui layout",
           "description":"this is a card format and its shows Order Timeline "
         },
         "AnalyticsTasks":{
@@ -97,10 +123,11 @@
             "count": 1,
             "location": "this section its placed in a bottom right  side",
             "description": "this card its  representing social icons and followers its occuiped 30% of the width"
-        },
-        "functionality":
-        {
-            "sidebar_toggle": "a toggle feature that allows the sidebar to be hidden or shown"
         }
+    },
+    "functionality":
+    {
+        "sidebar_toggle": "a toggle feature that allows the sidebar to be hidden or shown",
+        "drawer":" A toggleable feature enabling hiding or showing of the ."
     }
 }
