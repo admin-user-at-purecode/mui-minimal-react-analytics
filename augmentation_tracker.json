@@ -103,9 +103,10 @@
             "description": "count for Weekly Sales, New Users, Item Orders, Bug Reports"
          
         },
-        "functionality":
-        {
-            "sidebar_toggle": "a toggle feature that allows the sidebar to be hidden or shown"
-        }
+    },
+    "functionality":
+    {
+        "sidebar_toggle": "a toggle feature that allows the sidebar to be hidden or shown",
+        "drawer":" A toggleable feature enabling hiding or showing of the setting drawer."
     }
 }
