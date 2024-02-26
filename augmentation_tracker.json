@@ -99,10 +99,10 @@
             "location": "this section its placed in a bottom  left side",
             "description": "this card its representing a table inside the table their are a checkbox content its occuiped 70% of the width"
         },
-        
-        "functionality":
-        {
-            "sidebar_toggle": "a toggle feature that allows the sidebar to be hidden or shown"
-        }
+    },
+    "functionality":
+    {
+        "sidebar_toggle": "a toggle feature that allows the sidebar to be hidden or shown",
+        "drawer":" A toggleable feature enabling hiding or showing of the setting drawer."
     }
 }
