@@ -16,24 +16,21 @@
 
 
         "AnalyticsConversionRates",
-<<<<<<< Updated upstream
+
         "AnalyticsCurrentSubject",
-=======
+
         "AnalyticsCurrentVisits",
->>>>>>> Stashed changes
+
         "AnalyticsNews",
         "AnalyticsCurrentSubject",
         "AnalyticsWebsiteVisits",
          "AnalyticsTrafficBySite",
         "AnalyticsWidgetSummary",
         "AnalyticsOrderTimeline",
-<<<<<<< Updated upstream
+
         "AnalyticsTasks",
         "AnalyticsTrafficBySite"
-=======
-        "AnalyticsTasks"
->>>>>>> Stashed changes
-    ],
+
     "component_information":    
     {
         "Header": 
@@ -87,14 +84,14 @@
           "location": " its placed mid 2nd left side of the ui layout",
           "description":"this is a AnalyticsWebsiteVisits representing a graph "
         },
-<<<<<<< Updated upstream
+
         "AnalyticsOrderTimeline":
         {
           "count": 1,
           "location": "its placed below a AnalyticsCurrentSubject and its placed right side of the ui layout",
           "description":"this is a card format and its shows Order Timeline "
         },
-=======
+
         "AnalyticsTrafficBySite":{
             "count": 1,
             "location": "its placed in a  2nd mid right side of the ui layout",
@@ -107,32 +104,29 @@
             "description": "count for Weekly Sales, New Users, Item Orders, Bug Reports"
          
         },
->>>>>>> Stashed changes
+
         "AnalyticsTasks":{
             "count": 1,
             "location": "this section its placed in a bottom left side",
             "description": "this card its representing a table inside the table their are a checkbox content its occuiped 70% of the width"
         },
-<<<<<<< Updated upstream
+
         "AnalyticsTrafficBySite":{
             "count": 1,
             "location": "this section its placed in a bottom right  side",
             "description": "this card its  representing social icons and followers its occuiped 30% of the width"
         },
-=======
+
         "AnalyticsOrderTimeline":
         {
           "count": 1,
           "location": "its placed mid bottom right side of the ui layout",
           "description":"this is a card format and its shows Order Timeline "
         },
-     
-      
-       
->>>>>>> Stashed changes
-        "functionality":
-        {
-            "sidebar_toggle": "a toggle feature that allows the sidebar to be hidden or shown"
-        }
+    },
+    "functionality":
+    {
+        "sidebar_toggle": "a toggle feature that allows the sidebar to be hidden or shown",
+        "drawer":" A toggleable feature enabling hiding or showing of the setting drawer."
     }
 }
