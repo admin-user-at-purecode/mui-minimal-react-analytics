@@ -47,7 +47,7 @@
         "AnalyticsWidgetSummary": 
         {
             "count": 4,
-            "location": "top after title of the main contet",
+            "location": "top after title of the main contet card width is 50%",
             "description": "count for Weekly Sales, New Users, Item Orders, Bug Reports"
          
         },
@@ -79,28 +79,31 @@
         "AnalyticsWebsiteVisits":
         {
           "count": 1,
-          "location": "its placed below a AnalyticsNews and its placed left side of the ui layout",
+          "location": " its placed left side of the ui layout",
           "description":"this is a AnalyticsWebsiteVisits representing a graph "
         },
         "AnalyticsOrderTimeline":
         {
           "count": 1,
-          "location": "its placed below a AnalyticsCurrentSubject and its placed right side of the ui layout",
+          "location": "its placed right side of the ui layout",
           "description":"this is a card format and its shows Order Timeline "
         },
         "AnalyticsTasks":{
             "count": 1,
-            "location": "this section its placed in a bottom  left side",
+            "location": "this section its placed in a  left side occuiped 100% width",
             "description": "this card its representing a table inside the table their are a checkbox content its occuiped 70% of the width"
         },
         "AnalyticsTrafficBySite":{
             "count": 1,
-            "location": "this section its placed in a bottom right  side",
+            "location": "this section its placed in a bottom occiuped 100% width ",
             "description": "this card its  representing social icons and followers its occuiped 30% of the width"
-        },
-        "functionality":
-        {
-            "sidebar_toggle": "a toggle feature that allows the sidebar to be hidden or shown"
-        }
+        } 
+    },
+    "functionality":
+    {
+        "sidebar_toggle": "a toggle feature that allows the sidebar to be hidden or shown",
+        "drawer":" A toggleable feature enabling hiding or showing of the ."
     }
 }
+     
+    

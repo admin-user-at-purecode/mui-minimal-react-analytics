@@ -44,7 +44,7 @@ export default function OverviewAnalyticsView() {
       </Typography>
 
       <Grid container spacing={3}>
-        <Grid xs={12} sm={6} md={3}>
+        <Grid xs={12} sm={10} md={6}>
           <AnalyticsWidgetSummary
             title="Weekly Sales"
             total={714000}
@@ -52,7 +52,7 @@ export default function OverviewAnalyticsView() {
           />
         </Grid>
 
-        <Grid xs={12} sm={6} md={3}>
+        <Grid xs={12} sm={10} md={6}>
           <AnalyticsWidgetSummary
             title="New Users"
             total={1352831}
@@ -63,7 +63,7 @@ export default function OverviewAnalyticsView() {
           />
         </Grid>
 
-        <Grid xs={12} sm={6} md={3}>
+        <Grid xs={12} sm={10} md={6}>
           <AnalyticsWidgetSummary
             title="Item Orders"
             total={1723315}
@@ -72,7 +72,7 @@ export default function OverviewAnalyticsView() {
           />
         </Grid>
 
-        <Grid xs={12} sm={6} md={3}>
+        <Grid xs={12} sm={10} md={6}>
           <AnalyticsWidgetSummary
             title="Bug Reports"
             total={234}
@@ -191,10 +191,10 @@ export default function OverviewAnalyticsView() {
           />
         </Grid>
 
-        <Grid xs={12} md={6} lg={8}>
+        <Grid xs={12} md={10} lg={10}>
           <AnalyticsTasks title="Tasks" list={_analyticTasks} />
         </Grid>
-        <Grid xs={12} md={6} lg={4}>
+        <Grid xs={12} md={10} lg={10}>
           <AnalyticsTrafficBySite
             title="Traffic by Site"
             list={_analyticTraffic}
