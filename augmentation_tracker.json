@@ -47,7 +47,7 @@
         "AnalyticsWidgetSummary": 
         {
             "count": 4,
-            "location": "top after title of the main contet",
+            "location": "top after title of the main contet card occiuped 50% width ",
             "description": "count for Weekly Sales, New Users, Item Orders, Bug Reports"
          
         },
