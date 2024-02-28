@@ -143,7 +143,7 @@ export default function OverviewAnalyticsView() {
           />
         </Grid>
 
-        <Grid xs={12} md={6} lg={8}>
+        <Grid xs={12} md={10} lg={8}>
           <AnalyticsWebsiteVisits
             title="Website Visits"
             subheader="(+43%) than last year"
@@ -184,7 +184,7 @@ export default function OverviewAnalyticsView() {
             }}
           />
         </Grid>
-        <Grid xs={12} md={6} lg={4}>
+        <Grid xs={12} md={10} lg={8}>
           <AnalyticsOrderTimeline
             title="Order Timeline"
             list={_analyticOrderTimeline}
