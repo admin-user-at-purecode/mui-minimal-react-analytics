@@ -190,17 +190,17 @@ export default function OverviewAnalyticsView() {
             list={_analyticOrderTimeline}
           />
         </Grid>
-
-        <Grid xs={12} md={6} lg={8}>
-          <AnalyticsTasks title="Tasks" list={_analyticTasks} />
-        </Grid>
-        <Grid xs={12} md={6} lg={4}>
+        <Grid xs={12} md={10} lg={8}>
           <AnalyticsTrafficBySite
             title="Traffic by Site"
             list={_analyticTraffic}
           />
         </Grid>
-      </Grid>
+
+        <Grid xs={12} md={10} lg={8}>
+          <AnalyticsTasks title="Tasks" list={_analyticTasks} />
+        </Grid>
+              </Grid>
     </Container>
   );
 }
