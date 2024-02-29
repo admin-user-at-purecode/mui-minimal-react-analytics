@@ -84,7 +84,7 @@ export default function OverviewAnalyticsView() {
         </Grid>
 
 
-        <Grid xs={12} md={6} lg={8}>
+        <Grid xs={12} md={10} lg={10}>
           <AnalyticsConversionRates
             title="Conversion Rates"
             subheader="(+43%) than last year"
@@ -104,7 +104,7 @@ export default function OverviewAnalyticsView() {
             }}
           />
         </Grid>
-        <Grid xs={12} md={6} lg={4}>
+        <Grid xs={12} md={10} lg={10}>
           <AnalyticsCurrentVisits
             title="Current Visits"
             chart={{
@@ -119,7 +119,7 @@ export default function OverviewAnalyticsView() {
         </Grid>
 
        
-        <Grid xs={12} md={6} lg={8}>
+        <Grid xs={12} md={10} lg={10}>
           <AnalyticsNews title="News" list={_analyticPosts} />
         </Grid>
         <Grid xs={12} md={6} lg={4}>
@@ -143,7 +143,7 @@ export default function OverviewAnalyticsView() {
           />
         </Grid>
 
-        <Grid xs={12} md={6} lg={8}>
+        <Grid xs={12} md={10} lg={10}>
           <AnalyticsWebsiteVisits
             title="Website Visits"
             subheader="(+43%) than last year"
@@ -184,17 +184,17 @@ export default function OverviewAnalyticsView() {
             }}
           />
         </Grid>
-        <Grid xs={12} md={6} lg={4}>
+        <Grid xs={12} md={10} lg={10}>
           <AnalyticsOrderTimeline
             title="Order Timeline"
             list={_analyticOrderTimeline}
           />
         </Grid>
 
-        <Grid xs={12} md={6} lg={8}>
+        <Grid xs={12} md={10} lg={10}>
           <AnalyticsTasks title="Tasks" list={_analyticTasks} />
         </Grid>
-        <Grid xs={12} md={6} lg={4}>
+        <Grid xs={12} md={10} lg={10}>
           <AnalyticsTrafficBySite
             title="Traffic by Site"
             list={_analyticTraffic}
