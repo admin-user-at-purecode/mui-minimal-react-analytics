@@ -14,10 +14,12 @@
         "Sidebar",
         "title",
         "AnalyticsWidgetSummary",
-        "AnalyticsCurrentVisits",
+       
         "AnalyticsConversionRates",
-        "AnalyticsCurrentSubject",
+        "AnalyticsCurrentVisits",
         "AnalyticsNews",
+        "AnalyticsCurrentSubject",
+      
         "AnalyticsWebsiteVisits",
         "AnalyticsOrderTimeline",
         "AnalyticsTasks",
@@ -79,19 +81,21 @@
         "AnalyticsWebsiteVisits":
         {
           "count": 1,
-          "location": "its placed below a AnalyticsNews and its placed left side of the ui layout",
+          "location": "its placed left side of the ui layout taking 100% width",
           "description":"this is a AnalyticsWebsiteVisits representing a graph "
+        },
+        
+        "AnalyticsTasks":{
+            "count": 1,
+            "location": "its placed left  side  taking 100% of the ui layout",
+            "description": "this card its representing a table inside the table their are a checkbox content its occuiped 70% of the width"
         },
         "AnalyticsOrderTimeline":
         {
           "count": 1,
-          "location": "its placed below a AnalyticsCurrentSubject and its placed right side of the ui layout",
+
+          "location": "this section its placed in a bottom  left side",
           "description":"this is a card format and its shows Order Timeline "
-        },
-        "AnalyticsTasks":{
-            "count": 1,
-            "location": "this section its placed in a bottom  left side",
-            "description": "this card its representing a table inside the table their are a checkbox content its occuiped 70% of the width"
         },
         "AnalyticsTrafficBySite":{
             "count": 1,
