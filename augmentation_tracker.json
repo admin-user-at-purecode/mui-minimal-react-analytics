@@ -16,8 +16,9 @@
         "AnalyticsWidgetSummary",
         "AnalyticsCurrentVisits",
         "AnalyticsConversionRates",
-        "AnalyticsCurrentSubject",
         "AnalyticsNews",
+        "AnalyticsCurrentSubject",
+     
         "AnalyticsWebsiteVisits",
         "AnalyticsOrderTimeline",
         "AnalyticsTasks",
@@ -47,20 +48,20 @@
         "AnalyticsWidgetSummary": 
         {
             "count": 4,
-            "location": "top after title of the main contet",
+            "location": "top after title of the main contet card taking 50% width",
             "description": "count for Weekly Sales, New Users, Item Orders, Bug Reports"
          
         },
         "AnalyticsConversionRates": 
         {
             "count": 1,
-            "location": "mid left of main content taking 70% of full width ",
+            "location": "mid left of main content taking 30% of full width ",
             "description": "horizontal graph for conversion rates"
         },
         "AnalyticsCurrentVisits": 
         {
             "count": 1,
-            "location": "mid right of main content taking 30% of full width ",
+            "location": "mid right of main content taking 70% of full width ",
             "description": "Pie chart"
         },
         "AnalyticsNews": 
@@ -79,13 +80,13 @@
         "AnalyticsWebsiteVisits":
         {
           "count": 1,
-          "location": "its placed below a AnalyticsNews and its placed left side of the ui layout",
+          "location": " its placed left side of the ui layout taking 70% width",
           "description":"this is a AnalyticsWebsiteVisits representing a graph "
         },
         "AnalyticsOrderTimeline":
         {
           "count": 1,
-          "location": "its placed below a AnalyticsCurrentSubject and its placed right side of the ui layout",
+          "location":" its placed right side of the ui layout taking 70% width",
           "description":"this is a card format and its shows Order Timeline "
         },
         "AnalyticsTasks":{
