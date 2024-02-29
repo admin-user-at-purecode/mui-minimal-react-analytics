@@ -68,7 +68,7 @@
         "AnalyticsNews": 
         {
             "count": 1,
-            "location": "mid left 2nd part  of main content taking 70% of full width ",
+            "location": "mid left 2nd part  of main content taking 100% of full width ",
             "description": "Card with button and list"
         },
         "AnalyticsCurrentSubject": 
@@ -82,6 +82,7 @@
         {
           "count": 1,
           "location": " its placed left side of the ui layout",
+        
           "description":"this is a AnalyticsWebsiteVisits representing a graph "
         },
         "AnalyticsOrderTimeline":
