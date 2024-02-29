@@ -44,7 +44,7 @@ export default function OverviewAnalyticsView() {
       </Typography>
 
       <Grid container spacing={3}>
-        <Grid xs={12} sm={6} md={3}>
+        <Grid xs={12} sm={10} md={8}>
           <AnalyticsWidgetSummary
             title="Weekly Sales"
             total={714000}
@@ -52,7 +52,7 @@ export default function OverviewAnalyticsView() {
           />
         </Grid>
 
-        <Grid xs={12} sm={6} md={3}>
+        <Grid xs={12} sm={10} md={8}>
           <AnalyticsWidgetSummary
             title="New Users"
             total={1352831}
@@ -63,7 +63,7 @@ export default function OverviewAnalyticsView() {
           />
         </Grid>
 
-        <Grid xs={12} sm={6} md={3}>
+        <Grid xs={12} sm={10} md={8}>
           <AnalyticsWidgetSummary
             title="Item Orders"
             total={1723315}
@@ -72,7 +72,7 @@ export default function OverviewAnalyticsView() {
           />
         </Grid>
 
-        <Grid xs={12} sm={6} md={3}>
+        <Grid xs={12} sm={10} md={8}>
           <AnalyticsWidgetSummary
             title="Bug Reports"
             total={234}
@@ -143,7 +143,7 @@ export default function OverviewAnalyticsView() {
           />
         </Grid>
 
-        <Grid xs={12} md={6} lg={8}>
+        <Grid xs={12} md={10} lg={10}>
           <AnalyticsWebsiteVisits
             title="Website Visits"
             subheader="(+43%) than last year"
@@ -184,7 +184,7 @@ export default function OverviewAnalyticsView() {
             }}
           />
         </Grid>
-        <Grid xs={12} md={6} lg={4}>
+        <Grid xs={12} md={10} lg={8}>
           <AnalyticsOrderTimeline
             title="Order Timeline"
             list={_analyticOrderTimeline}
