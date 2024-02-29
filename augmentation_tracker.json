@@ -16,8 +16,9 @@
         "AnalyticsWidgetSummary",
         "AnalyticsCurrentVisits",
         "AnalyticsConversionRates",
-        "AnalyticsCurrentSubject",
         "AnalyticsNews",
+        "AnalyticsCurrentSubject",
+        
         "AnalyticsWebsiteVisits",
         "AnalyticsOrderTimeline",
         "AnalyticsTasks",
@@ -47,9 +48,15 @@
         "AnalyticsWidgetSummary": 
         {
             "count": 4,
-            "location": "top after title of the main contet",
+            "location": "top after title of the main contet  card taking 50% width ",
             "description": "count for Weekly Sales, New Users, Item Orders, Bug Reports"
          
+        },
+        "AnalyticsCurrentVisits": 
+        {
+            "count": 1,
+            "location": "mid left of main content taking 70% of full width ",
+            "description": "Pie chart"
         },
         "AnalyticsConversionRates": 
         {
@@ -57,12 +64,7 @@
             "location": "mid left of main content taking 70% of full width ",
             "description": "horizontal graph for conversion rates"
         },
-        "AnalyticsCurrentVisits": 
-        {
-            "count": 1,
-            "location": "mid right of main content taking 30% of full width ",
-            "description": "Pie chart"
-        },
+       
         "AnalyticsNews": 
         {
             "count": 1,
