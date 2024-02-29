@@ -84,7 +84,7 @@ export default function OverviewAnalyticsView() {
         </Grid>
 
 
-        <Grid xs={12} md={6} lg={8}>
+        <Grid xs={12} md={10} lg={10}>
           <AnalyticsConversionRates
             title="Conversion Rates"
             subheader="(+43%) than last year"
@@ -104,7 +104,7 @@ export default function OverviewAnalyticsView() {
             }}
           />
         </Grid>
-        <Grid xs={12} md={6} lg={4}>
+        <Grid xs={12} md={10} lg={10}>
           <AnalyticsCurrentVisits
             title="Current Visits"
             chart={{
@@ -119,10 +119,10 @@ export default function OverviewAnalyticsView() {
         </Grid>
 
        
-        <Grid xs={12} md={6} lg={8}>
+        <Grid xs={12} md={4} lg={4}>
           <AnalyticsNews title="News" list={_analyticPosts} />
         </Grid>
-        <Grid xs={12} md={6} lg={4}>
+        <Grid xs={12} md={6} lg={8}>
           <AnalyticsCurrentSubject
             title="Current Subject"
             chart={{
